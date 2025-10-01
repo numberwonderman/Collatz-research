@@ -5,7 +5,8 @@ from typing import List, Dict
 def get_leading_digit(n: int) -> int:
     """
     Extracts the first significant digit (1-9) of a positive integer.
-    Handles large numbers by using base-10 logarithm properties.
+    Uses string conversion for robust handling of large integers, avoiding 
+    floating-point precision issues common in Collatz sequences.
     
     Args:
         n: The number from the Collatz sequence.
@@ -14,22 +15,11 @@ def get_leading_digit(n: int) -> int:
         The first digit (1-9).
     """
     if n <= 0:
-        # Collatz sequences are typically defined for positive integers.
-        # This handles a potential edge case if the sequence hits zero or negative.
         raise ValueError("Input number must be a positive integer.")
     
-    # Use the mantissa/exponent property: 
-    # The leading digit is floor(n / 10^k) where k is floor(log10(n)).
-    # A cleaner mathematical way: 10^(log10(n) - floor(log10(n)))
-    
-    # log10(n) gives the power of 10. floor(log10(n)) gives the exponent 'k'.
-    exponent = math.floor(math.log10(n))
-    
-    # Divides n by 10^exponent to get the number between 1 and 10.
-    leading_float = n / (10**exponent)
-    
-    # The integer part is the leading digit (1-9).
-    return math.floor(leading_float)
+    # --- The robust fix: Convert to string, take the first character, convert to int ---
+    leading_digit_str = str(n)[0] 
+    return int(leading_digit_str)
 
 def analyze_leading_digits(sequence: List[int]) -> Dict[int, int]:
     """

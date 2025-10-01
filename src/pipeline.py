@@ -3,21 +3,21 @@
 import sys
 import json
 from typing import Dict
+from collections import Counter
 
-# Assume these are in the same 'src' directory
-# (You will need to ensure the imports work based on your main.py execution context)
-from collatz_generator import generalized_collatz
-from benford_analyzer import analyze_leading_digits
-from statistical_tests import analyze_conformity 
+# --- Imports (Corrected to use defined function names) ---
+from src.collatz_generator import generalized_collatz
+from src.benford_analyzer import get_leading_digit, analyze_leading_digits
+from src.statistical_tests import get_expected_counts, run_chi_squared_test, calculate_mad, analyze_conformity 
 
-# --- Configuration (This would normally come from CLI/config file in Phase 5) ---
+# --- Configuration ---
 
 # Classical Collatz Test Configuration (a=2, b=3, c=1)
 TEST_CONFIG = {
     "param_a": 2,
     "param_b": 3,
     "param_c": 1,
-    "initial_range": (1, 100),  # Test range of 1 to 100
+    "initial_range": (1, 10000),   # Test range of 1 to 100
     "max_iterations": 2000
 }
 
@@ -38,6 +38,7 @@ def run_analysis_pipeline(config: Dict) -> Dict:
     # 1. Sequence Generation (P1)
     print(f"--- Running Generalized Collatz (a={a}, b={b}, c={c}) on N={start} to {end} ---")
     
+    # Run the Collatz process for the specified range of starting numbers
     for n in range(start, end + 1):
         # We start analysis from 2 since 1 is the convergence point
         if n == 1:
@@ -45,23 +46,21 @@ def run_analysis_pipeline(config: Dict) -> Dict:
 
         sequence = generalized_collatz(n, a, b, c, max_iter)
         
-        # 2. Leading Digit Extraction (P2)
-        # We concatenate all sequences to form one large dataset of leading digits
+        # 2. Leading Digit Extraction & Aggregation (P2)
+        # CRITICAL FIX: Extract the digit and append the digit itself.
         for term in sequence:
             try:
-                # Only analyze terms > 0, excluding the starting number 'n' itself
-                if term > 1: # We keep 1 in the sequence for cycle detection but skip it here.
-                    digit = analyze_leading_digits([term])[get_leading_digit(term)] # This is a bit clumsy, but works
+                # We skip the number 1 (the final convergence point) from the analysis.
+                if term > 1:
+                    digit = get_leading_digit(term)
+                    # We append the digit (an integer 1-9) to the master list
                     all_digits.append(digit)
             except ValueError:
-                # Non-positive numbers skipped
+                # Skip non-positive values
                 continue
                 
-    # 3. Digit Frequency Counting (P2)
-    # Re-run the counting on the collective list of all digits
-    # The analyze_leading_digits function in P2 is currently designed to take a sequence, 
-    # not a list of digits, so we need a slight adjustment or a clean count:
-    from collections import Counter
+    # 3. Digit Frequency Counting (P2/P3 boundary)
+    # The 'all_digits' list now correctly contains only the leading digits (1-9).
     final_counts = Counter(all_digits)
     
     # Pad the counts dictionary to ensure keys 1-9 exist for the statistical functions
@@ -91,7 +90,9 @@ if __name__ == "__main__":
         print("\n--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---")
         print(f"Parameters: {analysis_output['parameter_set']}")
         print(f"Total Samples: {analysis_output['total_samples']}")
-        print(f"Digit Counts: {json.dumps(analysis_output['digit_frequencies'], indent=2)}")
+        # Ensure the dictionary is printed nicely
+        formatted_digits = json.dumps(analysis_output['digit_frequencies'], indent=2)
+        print(f"Digit Counts: {formatted_digits}")
         print(f"Chi-Squared p-value: {analysis_output['p_value']}")
         print(f"MAD Score: {analysis_output['mad']} (Conforms if < 0.015)")
         print(f"Overall Conformity: {analysis_output['conforms_benford']}")

@@ -33,10 +33,10 @@ def test_analyze_leading_digits_simple_sequence():
     sequence = [1, 2, 3, 10, 25, 400, 55, 6, 7, 8, 9]
     expected_counts = {
         1: 2,  # 1, 10
-        2: 1,  # 2
+      2: 2,  # 2, 25q
         3: 1,  # 3
         4: 1,  # 400
-        5: 2,  # 25, 55
+        5: 1,  # 25, 55
         6: 1,  # 6
         7: 1,  # 7
         8: 1,  # 8
