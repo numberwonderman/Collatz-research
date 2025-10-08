@@ -2,3 +2,4 @@
 numpy
 scipy
 # (pandas, gspread, oauth2client are not needed until Phase 4)
+psutil
