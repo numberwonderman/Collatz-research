@@ -32,6 +32,41 @@ from src.benford_analyzer import get_leading_digit
 from src.statistical_tests import analyze_conformity
 
 
+def create_config_file(filename: str = "pipeline_config.json"):
+    default_config = {
+        "runtime": {
+            "param_a": 2,
+            "param_b": 7,
+            "param_c": 1,
+            "initial_range_start": 1,
+            "initial_range_end": 10000,
+            "max_iterations": 2000,
+            "batch_size": 1000,
+            "output_dir": "results",
+            "log_level": "INFO",
+            "save_intermediate": True,
+            "timeout_per_batch": 300,
+        },
+        "hardware": {
+            "max_cores": None,
+            "max_memory_gb": None,
+            "memory_safety_factor": 0.8,
+            "core_safety_factor": 0.8,
+        }
+    }
+    with open(filename, "w") as f:
+        json.dump(default_config, f, indent=2)
+    return filename
+
+
+def load_config(filename: str):
+    with open(filename, "r") as f:
+        config_data = json.load(f)
+    runtime_conf = RuntimeConfig(**config_data["runtime"])
+    hardware_conf = HardwareConfig(**config_data["hardware"])
+    return runtime_conf, hardware_conf
+
+
 @dataclass
 class HardwareConfig:
     max_cores: Optional[int] = None
@@ -51,7 +86,7 @@ class HardwareConfig:
 @dataclass
 class RuntimeConfig:
     param_a: int = 2
-    param_b: int = 3
+    param_b: int = 7
     param_c: int = 1
     initial_range_start: int = 1
     initial_range_end: int = 10000
@@ -185,6 +220,9 @@ def run_automated_pipeline(runtime_config: RuntimeConfig, hardware_config: Hardw
     processed_cases_file = output_dir / "processed_cases.json"
     processed_cases = load_processed_cases(processed_cases_file)
 
+    # DEBUG: log loaded processed cases count
+    logger.debug(f"Loaded {len(processed_cases)} previously processed cases.")
+
     estimated_memory = estimate_memory_usage(runtime_config.batch_size, runtime_config.max_iterations)
 
     if estimated_memory > hardware_config.max_memory_gb:
@@ -208,13 +246,27 @@ def run_automated_pipeline(runtime_config: RuntimeConfig, hardware_config: Hardw
             for batch in [(start, end, runtime_config) for start, end in batches]
         }
         for future in as_completed(futures):
-            try:
-                result = future.result(timeout=runtime_config.timeout_per_batch)
+    try:
+        result = future.result(timeout=runtime_config.timeout_per_batch)
 
-                for digit, count in result["digit_counts"].items():
-                    all_digit_counts[digit] += count
-                total_processed += result["processed_count"]
-                completed_batches += 1
+        for digit, count in result["digit_counts"].items():
+            all_digit_counts[digit] += count
+        total_processed += result["processed_count"]
+        completed_batches += 1
+
+        if runtime_config.save_intermediate:
+            batch_file = output_dir / f"batch_{result['batch_range'][0]}_{result['batch_range'][1]}.json"
+            with open(batch_file, "w") as f:
+                json.dump(result, f, indent=2)
+
+        logger.info(
+            f"Completed batch {completed_batches}/{len(batches)}: Range {result['batch_range']}, "
+            f"Numbers processed: {result['processed_count']}, Digits collected: {result['total_digits']}"
+        )
+    except Exception as e:
+        logger.error(f"Batch failed: {e}")
+        continue
+
 
                 if runtime_config.save_intermediate:
                     batch_file = output_dir / f"batch_{result['batch_range'][0]}_{result['batch_range'][1]}.json"
@@ -222,48 +274,5 @@ def run_automated_pipeline(runtime_config: RuntimeConfig, hardware_config: Hardw
                         json.dump(result, f, indent=2)
 
                 logger.info(
-                    f"Completed batch {completed_batches}/{len(batches)}: Range {result['batch_range']}, "
-                    f"Numbers processed: {result['processed_count']}, Digits collected: {result['total_digits']}"
-                )
-            except Exception as e:
-                logger.error(f"Batch failed: {e}")
-                continue
-
-    final_results = analyze_conformity(all_digit_counts)
-    execution_time = time.time() - start_time
-
-    dmix_score = None
-    if final_results["mad"] > 0 and final_results["total_samples"] > 0:
-        dmix_score = (1 / final_results["mad"]) * math.log10(final_results["total_samples"])
-
-    results = PipelineResults(
-        parameter_set=f"a={runtime_config.param_a}, b={runtime_config.param_b}, c={runtime_config.param_c}",
-        total_samples=final_results["total_samples"],
-        digit_frequencies=all_digit_counts,
-        p_value=final_results["p_value"],
-        mad=final_results["mad"],
-        conforms_benford=final_results["conforms_benford"],
-        execution_time=execution_time,
-        batches_processed=completed_batches,
-        hardware_used=get_hardware_info(),
-        dmix_score=dmix_score,
-    )
-
-    results_file = output_dir / "final_results.json"
-    with open(results_file, "w") as f:
-        json.dump(asdict(results), f, indent=2)
-
-    logger.info(f"Pipeline completed in {execution_time:.2f} seconds")
-    logger.info(f"Processed {completed_batches}/{len(batches)} batches successfully")
-    logger.info(f"Total samples: {results.total_samples:,}")
-    logger.info(f"MAD score: {results.mad:.6f}")
-    logger.info(f"Dmix score: {results.dmix_score:.2f}" if results.dmix_score else "Dmix: N/A")
-
-    return results
-
-
-# Configuration and CLI parsing omitted for brevity, but can be included as shown earlier.
-
-if __name__ == "__main__":
-    # Standard CLI-based main() function should be here (as designed previously)
-    pass
+                    f"Completed batch {completed_batches
+                    

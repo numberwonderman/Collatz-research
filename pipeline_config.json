@@ -1,0 +1,21 @@
+{
+  "runtime": {
+    "param_a": 2,
+    "param_b": 3,
+    "param_c": 1,
+    "initial_range_start": 1,
+    "initial_range_end": 10000,
+    "max_iterations": 2000,
+    "batch_size": 1000,
+    "output_dir": "results",
+    "log_level": "INFO",
+    "save_intermediate": true,
+    "timeout_per_batch": 300
+  },
+  "hardware": {
+    "max_cores": null,
+    "max_memory_gb": null,
+    "memory_safety_factor": 0.8,
+    "core_safety_factor": 0.8
+  }
+}

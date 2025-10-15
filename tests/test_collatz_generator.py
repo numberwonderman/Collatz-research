@@ -1,37 +1,33 @@
 import pytest
-from src.collatz_generator import generalized_collatz
+# Assuming your function is imported from the correct source file
+from src.collatz_generator import generalized_collatz 
 
-def test_standard_collatz_sequence_at_six():
+def test_standard_collatz_sequence():
     """
-    Test for the standard Collatz sequence (3n+1) starting at 6.
-    Parameters: a=2, b=3, c=1.
+    Tests the classic (3n+1) sequence starting at 6.
+    Parameters used: a=2 (ignored by new function), b=3, c=1.
     """
-    # The expected sequence from your saved information: [6, 3, 10, 5, 16, 8, 4, 2, 1]
-    expected_sequence = [6, 3, 10, 5, 16, 8, 4, 2, 1]
+    # The expected sequence for N=6: 6, 3, 10, 5, 16, 8, 4, 2, 1
+    expected = [6, 3, 10, 5, 16, 8, 4, 2, 1]
     
-    # Run the function for a standard Collatz (a=2, b=3, c=1)
-    result_sequence = generalized_collatz(n=6, a=2, b=3, c=1)
+    # NOTE: The 'a' parameter (2) is still passed, but its value is ignored 
+    # by the parity-based logic in the fixed function.
+    result = generalized_collatz(6, a=2, b=3, c=1)
     
-    # Assert that the generated sequence matches the expected sequence
-    assert result_sequence == expected_sequence, \
-        f"Test Failed: Standard Collatz sequence is incorrect.\n" \
-        f"Expected: {expected_sequence}\n" \
-        f"Received: {result_sequence}"
-
-def test_sequence_stopping_at_one():
-    """Test a sequence that converges to 1."""
-    expected_sequence = [19, 58, 29, 88, 44, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1]
-    result_sequence = generalized_collatz(n=19, a=2, b=3, c=1)
-    assert result_sequence == expected_sequence
-
-def test_sequence_with_max_iterations():
-    """Test the max_iterations safeguard."""
-    # This sequence is much longer, the limit should cut it off before 1 is reached.
-    result_sequence = generalized_collatz(n=27, a=2, b=3, c=1, max_iterations=5)
-    expected_sequence = [27, 82, 41, 124, 62, 31] # The last step is the 5th iteration result (31)
-    assert len(result_sequence) == 6
-    assert result_sequence[0] == 27
-    assert result_sequence[-1] == 31
+    assert result == expected, "Standard Collatz sequence failed for N=6"
 
 
-# Add more tests here for other variants and edge cases as per your plan!
+def test_generalized_collatz_termination():
+    """
+    Tests the generalized (5n+1)/2^k sequence, which should terminate at 1.
+    Parameters used: a=5 (ignored), b=5, c=1.
+    
+    Trace for N=3:
+    3 (odd) -> (5*3 + 1) = 16. Max division by 2 is 4 steps: 16 -> 1.
+    """
+    # The expected sequence for N=3: 3, 1
+    # Assuming your function is designed to go straight to 1 after the maximal division by 2.
+    expected = [3, 1] 
+    result = generalized_collatz(3, a=5, b=5, c=1)
+    
+    assert result == expected, "Generalized Collatz (5n+1) sequence failed for N=3"

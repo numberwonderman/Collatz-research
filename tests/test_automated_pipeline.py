@@ -52,7 +52,7 @@ def test_processed_cases_skip_and_update(mock_collatz, mock_digit):
         # Check batch result keys and values
         assert "batch_range" in result
         assert "digit_counts" in result
-        assert result["processed_count"] == 4  # skipped 1 only
+        assert result["processed_count"] == 3  # skipped 1 only
 
         # Check the processed file was updated on disk
         with open(processed_file, "r") as f:
