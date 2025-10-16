@@ -323,3 +323,783 @@ MAD Score: 0.00144
 KS D-Max: 0.00349
 Digital Mixing Speed (1/MAD * log10(m)): 4620.923229606112
 Dmix Variance (Total Variation Distance): 0.006495773181301109
+--- Running Generalized Collatz (a=3, b=8, c=1) on N=1 to 10000 ---
+Collatz Generation Time: 0.69 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=3, b=8, c=1
+Initial Range: N=1 to 10000
+Total Samples: 542,046
+Digit Counts: {
+  "1": 160619,
+  "2": 95074,
+  "3": 68219,
+  "4": 53363,
+  "5": 43030,
+  "6": 36940,
+  "7": 32186,
+  "8": 27624,
+  "9": 24991
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.00124
+KS D-Max: 0.0054
+Digital Mixing Speed (1/MAD * log10(m)): 4624.222696706145
+Dmix Variance (Total Variation Distance): 0.005593045273440619
+--- Running Generalized Collatz (a=3, b=9, c=1) on N=1 to 10000 ---
+Collatz Generation Time: 2.45 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=3, b=9, c=1
+Initial Range: N=1 to 10000
+Total Samples: 1,347,982
+Digit Counts: {
+  "1": 402066,
+  "2": 235299,
+  "3": 169758,
+  "4": 130754,
+  "5": 108169,
+  "6": 89223,
+  "7": 77772,
+  "8": 72714,
+  "9": 62227
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.00119
+KS D-Max: 0.00429
+Digital Mixing Speed (1/MAD * log10(m)): 5150.995036114375
+Dmix Variance (Total Variation Distance): 0.005345791880195315
+--- Running Generalized Collatz (a=3, b=10, c=1) on N=1 to 10000 ---
+Collatz Generation Time: 0.58 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=3, b=10, c=1
+Initial Range: N=1 to 10000
+Total Samples: 492,393
+Digit Counts: {
+  "1": 98578,
+  "2": 78559,
+  "3": 64708,
+  "4": 63552,
+  "5": 39602,
+  "6": 37201,
+  "7": 37051,
+  "8": 36296,
+  "9": 36846
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.02608
+KS D-Max: 0.11737
+Digital Mixing Speed (1/MAD * log10(m)): 218.26349195737532
+Dmix Variance (Total Variation Distance): 0.11737406091308925
+--- Running Generalized Collatz (a=3, b=3, c=-2) on N=1 to 10000 ---
+Collatz Generation Time: 1.31 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=3, b=3, c=-2
+Initial Range: N=1 to 10000
+Total Samples: 1,003,014
+Digit Counts: {
+  "1": 301435,
+  "2": 178190,
+  "3": 123408,
+  "4": 96690,
+  "5": 79521,
+  "6": 67655,
+  "7": 58514,
+  "8": 51535,
+  "9": 46066
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.00065
+KS D-Max: 0.00135
+Digital Mixing Speed (1/MAD * log10(m)): 9232.779992176997
+Dmix Variance (Total Variation Distance): 0.002912922270888029
+--- Running Generalized Collatz (a=3, b=4, c=-2) on N=1 to 10000 ---
+Collatz Generation Time: 2.67 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=3, b=4, c=-2
+Initial Range: N=1 to 10000
+Total Samples: 1,575,211
+Digit Counts: {
+  "1": 476421,
+  "2": 274321,
+  "3": 195927,
+  "4": 152331,
+  "5": 124577,
+  "6": 106106,
+  "7": 91514,
+  "8": 81049,
+  "9": 72965
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.00062
+KS D-Max: 0.00142
+Digital Mixing Speed (1/MAD * log10(m)): 9995.707638551883
+Dmix Variance (Total Variation Distance): 0.0028000368002852605
+--- Running Generalized Collatz (a=3, b=5, c=-2) on N=1 to 10000 ---
+Collatz Generation Time: 0.80 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=3, b=5, c=-2
+Initial Range: N=1 to 10000
+Total Samples: 692,533
+Digit Counts: {
+  "1": 206480,
+  "2": 123140,
+  "3": 86443,
+  "4": 68769,
+  "5": 54711,
+  "6": 45762,
+  "7": 39570,
+  "8": 35998,
+  "9": 31660
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.0011
+KS D-Max: 0.00288
+Digital Mixing Speed (1/MAD * log10(m)): 5309.491338968102
+Dmix Variance (Total Variation Distance): 0.00493810435868219
+--- Running Generalized Collatz (a=3, b=6, c=-3) on N=1 to 10000 ---
+Collatz Generation Time: 1.16 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=3, b=6, c=-3
+Initial Range: N=1 to 10000
+Total Samples: 624,901
+Digit Counts: {
+  "1": 185118,
+  "2": 110410,
+  "3": 78919,
+  "4": 61850,
+  "5": 50127,
+  "6": 41145,
+  "7": 36708,
+  "8": 31492,
+  "9": 29132
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.00148
+KS D-Max: 0.00479
+Digital Mixing Speed (1/MAD * log10(m)): 3916.088661925149
+Dmix Variance (Total Variation Distance): 0.0066559719655887375
+--- Running Generalized Collatz (a=3, b=7, c=-3) on N=1 to 10000 ---
+Collatz Generation Time: 3.56 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=3, b=7, c=-3
+Initial Range: N=1 to 10000
+Total Samples: 1,848,319
+Digit Counts: {
+  "1": 556892,
+  "2": 324944,
+  "3": 224118,
+  "4": 182458,
+  "5": 149139,
+  "6": 124628,
+  "7": 108189,
+  "8": 91598,
+  "9": 86353
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.00124
+KS D-Max: 0.0037
+Digital Mixing Speed (1/MAD * log10(m)): 5053.85236122119
+Dmix Variance (Total Variation Distance): 0.005564861743603416
+
+coprime tests
+--- Running Generalized Collatz (a=2, b=7, c=1) on N=1 to 10000 ---
+Collatz Generation Time: 3.91 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=2, b=7, c=1
+Initial Range: N=1 to 10000
+Total Samples: 1,959,207
+Digit Counts: {
+  "1": 590328,
+  "2": 341600,
+  "3": 242573,
+  "4": 193707,
+  "5": 154157,
+  "6": 131793,
+  "7": 117205,
+  "8": 100036,
+  "9": 87808
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.00098
+KS D-Max: 0.00258
+Digital Mixing Speed (1/MAD * log10(m)): 6420.490126325457
+Dmix Variance (Total Variation Distance): 0.0043922373161925515
+--- Running Generalized Collatz (a=3, b=8, c=1) on N=1 to 10000 ---
+Collatz Generation Time: 0.64 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=3, b=8, c=1
+Initial Range: N=1 to 10000
+Total Samples: 542,046
+Digit Counts: {
+  "1": 160619,
+  "2": 95074,
+  "3": 68219,
+  "4": 53363,
+  "5": 43030,
+  "6": 36940,
+  "7": 32186,
+  "8": 27624,
+  "9": 24991
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.00124
+KS D-Max: 0.0054
+Digital Mixing Speed (1/MAD * log10(m)): 4624.222696706145
+Dmix Variance (Total Variation Distance): 0.005593045273440619
+--- Running Generalized Collatz (a=4, b=7, c=1) on N=1 to 10000 ---
+Collatz Generation Time: 3.86 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=4, b=7, c=1
+Initial Range: N=1 to 10000
+Total Samples: 1,959,207
+Digit Counts: {
+  "1": 590328,
+  "2": 341600,
+  "3": 242573,
+  "4": 193707,
+  "5": 154157,
+  "6": 131793,
+  "7": 117205,
+  "8": 100036,
+  "9": 87808
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.00098
+KS D-Max: 0.00258
+Digital Mixing Speed (1/MAD * log10(m)): 6420.490126325457
+Dmix Variance (Total Variation Distance): 0.0043922373161925515
+--- Running Generalized Collatz (a=5, b=7, c=1) on N=1 to 10000 ---
+Collatz Generation Time: 3.89 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=5, b=7, c=1
+Initial Range: N=1 to 10000
+Total Samples: 1,959,207
+Digit Counts: {
+  "1": 590328,
+  "2": 341600,
+  "3": 242573,
+  "4": 193707,
+  "5": 154157,
+  "6": 131793,
+  "7": 117205,
+  "8": 100036,
+  "9": 87808
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.00098
+KS D-Max: 0.00258
+Digital Mixing Speed (1/MAD * log10(m)): 6420.490126325457
+Dmix Variance (Total Variation Distance): 0.0043922373161925515
+--- Running Generalized Collatz (a=6, b=7, c=1) on N=1 to 10000 ---
+Collatz Generation Time: 3.93 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=6, b=7, c=1
+Initial Range: N=1 to 10000
+Total Samples: 1,959,207
+Digit Counts: {
+  "1": 590328,
+  "2": 341600,
+  "3": 242573,
+  "4": 193707,
+  "5": 154157,
+  "6": 131793,
+  "7": 117205,
+  "8": 100036,
+  "9": 87808
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.00098
+KS D-Max: 0.00258
+Digital Mixing Speed (1/MAD * log10(m)): 6420.490126325457
+Dmix Variance (Total Variation Distance): 0.0043922373161925515
+--- Running Generalized Collatz (a=4, b=8, c=-1) on N=1 to 10000 ---
+Collatz Generation Time: 0.67 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=4, b=8, c=-1
+Initial Range: N=1 to 10000
+Total Samples: 542,056
+Digit Counts: {
+  "1": 160708,
+  "2": 94951,
+  "3": 68245,
+  "4": 53352,
+  "5": 43137,
+  "6": 36946,
+  "7": 32092,
+  "8": 27597,
+  "9": 25028
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.00127
+KS D-Max: 0.00547
+Digital Mixing Speed (1/MAD * log10(m)): 4514.99539840554
+Dmix Variance (Total Variation Distance): 0.0057152223313809945
+--- Running Generalized Collatz (a=6, b=8, c=-2) on N=1 to 10000 ---
+Collatz Generation Time: 1.13 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=6, b=8, c=-2
+Initial Range: N=1 to 10000
+Total Samples: 799,930
+Digit Counts: {
+  "1": 240159,
+  "2": 141155,
+  "3": 100926,
+  "4": 77641,
+  "5": 62299,
+  "6": 53849,
+  "7": 46289,
+  "8": 40608,
+  "9": 37004
+}
+Chi-Squared p-value: 1e-05
+MAD Score: 0.00058
+KS D-Max: 0.00094
+Digital Mixing Speed (1/MAD * log10(m)): 10177.675835451977
+Dmix Variance (Total Variation Distance): 0.0026193717069739365
+--- Running Generalized Collatz (a=6, b=10, c=-3) on N=1 to 10000 ---
+Collatz Generation Time: 0.52 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=6, b=10, c=-3
+Initial Range: N=1 to 10000
+Total Samples: 492,393
+Digit Counts: {
+  "1": 98578,
+  "2": 79159,
+  "3": 64108,
+  "4": 64102,
+  "5": 39052,
+  "6": 37751,
+  "7": 36501,
+  "8": 36846,
+  "9": 36296
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.02581
+KS D-Max: 0.11616
+Digital Mixing Speed (1/MAD * log10(m)): 220.546759792652
+Dmix Variance (Total Variation Distance): 0.11615552206302437
+diverse adderse fixed a and b varying c
+
+--- Running Generalized Collatz (a=2, b=3, c=0) on N=1 to 10000 ---
+Collatz Generation Time: 1.72 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=2, b=3, c=0
+Initial Range: N=1 to 10000
+Total Samples: 1,002,979
+Digit Counts: {
+  "1": 301284,
+  "2": 178341,
+  "3": 123253,
+  "4": 96836,
+  "5": 79376,
+  "6": 67730,
+  "7": 58490,
+  "8": 51626,
+  "9": 46043
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.00069
+KS D-Max: 0.00138
+Digital Mixing Speed (1/MAD * log10(m)): 8697.52440582583
+Dmix Variance (Total Variation Distance): 0.003095307122211302
+--- Running Generalized Collatz (a=2, b=3, c=2) on N=1 to 10000 ---
+Collatz Generation Time: 1.35 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=2, b=3, c=2
+Initial Range: N=1 to 10000
+Total Samples: 1,002,959
+Digit Counts: {
+  "1": 301402,
+  "2": 178223,
+  "3": 123369,
+  "4": 96682,
+  "5": 79527,
+  "6": 67645,
+  "7": 58513,
+  "8": 51575,
+  "9": 46023
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.00066
+KS D-Max: 0.00136
+Digital Mixing Speed (1/MAD * log10(m)): 9092.85330279129
+Dmix Variance (Total Variation Distance): 0.002964172501191055
+--- Running Generalized Collatz (a=2, b=3, c=-4) on N=1 to 10000 ---
+Collatz Generation Time: 1.50 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=2, b=3, c=-4
+Initial Range: N=1 to 10000
+Total Samples: 1,003,034
+Digit Counts: {
+  "1": 301364,
+  "2": 178351,
+  "3": 123221,
+  "4": 96859,
+  "5": 79401,
+  "6": 67715,
+  "7": 58521,
+  "8": 51623,
+  "9": 45979
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.00067
+KS D-Max: 0.00131
+Digital Mixing Speed (1/MAD * log10(m)): 8957.18754420559
+Dmix Variance (Total Variation Distance): 0.0030324409159125376
+--- Running Generalized Collatz (a=3, b=5, c=0) on N=1 to 10000 ---
+Collatz Generation Time: 0.81 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=3, b=5, c=0
+Initial Range: N=1 to 10000
+Total Samples: 692,532
+Digit Counts: {
+  "1": 206469,
+  "2": 123155,
+  "3": 86423,
+  "4": 68785,
+  "5": 54714,
+  "6": 45779,
+  "7": 39533,
+  "8": 36003,
+  "9": 31671
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.00111
+KS D-Max: 0.00289
+Digital Mixing Speed (1/MAD * log10(m)): 5261.657518697566
+Dmix Variance (Total Variation Distance): 0.004990562717139081
+--- Running Generalized Collatz (a=3, b=5, c=3) on N=1 to 10000 ---
+Collatz Generation Time: 14.37 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=3, b=5, c=3
+Initial Range: N=1 to 10000
+Total Samples: 4,438,117
+Digit Counts: {
+  "1": 1326855,
+  "2": 780728,
+  "3": 566864,
+  "4": 419274,
+  "5": 355777,
+  "6": 297506,
+  "7": 253505,
+  "8": 228191,
+  "9": 209417
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.00123
+KS D-Max: 0.00224
+Digital Mixing Speed (1/MAD * log10(m)): 5404.226623698327
+Dmix Variance (Total Variation Distance): 0.00554987026676192
+--- Running Generalized Collatz (a=4, b=5, c=0) on N=1 to 10000 ---
+Collatz Generation Time: 0.83 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=4, b=5, c=0
+Initial Range: N=1 to 10000
+Total Samples: 692,532
+Digit Counts: {
+  "1": 206469,
+  "2": 123155,
+  "3": 86423,
+  "4": 68785,
+  "5": 54714,
+  "6": 45779,
+  "7": 39533,
+  "8": 36003,
+  "9": 31671
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.00111
+KS D-Max: 0.00289
+Digital Mixing Speed (1/MAD * log10(m)): 5261.657518697566
+Dmix Variance (Total Variation Distance): 0.004990562717139081
+--- Running Generalized Collatz (a=4, b=5, c=-4) on N=1 to 10000 ---
+Collatz Generation Time: 0.75 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=4, b=5, c=-4
+Initial Range: N=1 to 10000
+Total Samples: 692,545
+Digit Counts: {
+  "1": 206492,
+  "2": 123175,
+  "3": 86414,
+  "4": 68751,
+  "5": 54770,
+  "6": 45750,
+  "7": 39553,
+  "8": 35959,
+  "9": 31681
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.00109
+KS D-Max: 0.00287
+Digital Mixing Speed (1/MAD * log10(m)): 5358.209172588679
+Dmix Variance (Total Variation Distance): 0.004900635164930989
+--- Running Generalized Collatz (a=5, b=6, c=0) on N=1 to 10000 ---
+Collatz Generation Time: 1.49 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=5, b=6, c=0
+Initial Range: N=1 to 10000
+Total Samples: 1,002,979
+Digit Counts: {
+  "1": 301284,
+  "2": 178341,
+  "3": 123253,
+  "4": 96836,
+  "5": 79376,
+  "6": 67730,
+  "7": 58490,
+  "8": 51626,
+  "9": 46043
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.00069
+KS D-Max: 0.00138
+Digital Mixing Speed (1/MAD * log10(m)): 8697.52440582583
+Dmix Variance (Total Variation Distance): 0.003095307122211302
+--- Running Generalized Collatz (a=5, b=6, c=4) on N=1 to 10000 ---
+Collatz Generation Time: 1.35 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=5, b=6, c=4
+Initial Range: N=1 to 10000
+Total Samples: 1,002,959
+Digit Counts: {
+  "1": 301402,
+  "2": 178223,
+  "3": 123369,
+  "4": 96682,
+  "5": 79527,
+  "6": 67645,
+  "7": 58513,
+  "8": 51575,
+  "9": 46023
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.00066
+KS D-Max: 0.00136
+Digital Mixing Speed (1/MAD * log10(m)): 9092.85330279129
+Dmix Variance (Total Variation Distance): 0.002964172501191055
+
+extreme cases --- Running Generalized Collatz (a=7, b=9, c=1) on N=1 to 10000 ---
+Collatz Generation Time: 2.28 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=7, b=9, c=1
+Initial Range: N=1 to 10000
+Total Samples: 1,347,982
+Digit Counts: {
+  "1": 402066,
+  "2": 235299,
+  "3": 169758,
+  "4": 130754,
+  "5": 108169,
+  "6": 89223,
+  "7": 77772,
+  "8": 72714,
+  "9": 62227
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.00119
+KS D-Max: 0.00429
+Digital Mixing Speed (1/MAD * log10(m)): 5150.995036114375
+Dmix Variance (Total Variation Distance): 0.005345791880195315
+--- Running Generalized Collatz (a=8, b=11, c=-1) on N=1 to 10000 ---
+Collatz Generation Time: 1.78 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=8, b=11, c=-1
+Initial Range: N=1 to 10000
+Total Samples: 1,086,777
+Digit Counts: {
+  "1": 323931,
+  "2": 193268,
+  "3": 135074,
+  "4": 106219,
+  "5": 84783,
+  "6": 73567,
+  "7": 63304,
+  "8": 55875,
+  "9": 50756
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.00106
+KS D-Max: 0.00296
+Digital Mixing Speed (1/MAD * log10(m)): 5694.472111937601
+Dmix Variance (Total Variation Distance): 0.004782377606972178
+--- Running Generalized Collatz (a=9, b=12, c=2) on N=1 to 10000 ---
+Collatz Generation Time: 0.82 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=9, b=12, c=2
+Initial Range: N=1 to 10000
+Total Samples: 624,888
+Digit Counts: {
+  "1": 185067,
+  "2": 110453,
+  "3": 78796,
+  "4": 61981,
+  "5": 50127,
+  "6": 41011,
+  "7": 36899,
+  "8": 31222,
+  "9": 29332
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.00164
+KS D-Max: 0.00487
+Digital Mixing Speed (1/MAD * log10(m)): 3534.025722438362
+Dmix Variance (Total Variation Distance): 0.007375521463474602
+--- Running Generalized Collatz (a=10, b=15, c=-3) on N=1 to 10000 ---
+Collatz Generation Time: 1.45 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=10, b=15, c=-3
+Initial Range: N=1 to 10000
+Total Samples: 841,308
+Digit Counts: {
+  "1": 250600,
+  "2": 149987,
+  "3": 105128,
+  "4": 79817,
+  "5": 66348,
+  "6": 56497,
+  "7": 49524,
+  "8": 43274,
+  "9": 40133
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.00123
+KS D-Max: 0.00331
+Digital Mixing Speed (1/MAD * log10(m)): 4817.036600522459
+Dmix Variance (Total Variation Distance): 0.005516325252689604
+--- Running Generalized Collatz (a=11, b=14, c=3) on N=1 to 10000 ---
+Collatz Generation Time: 0.44 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=11, b=14, c=3
+Initial Range: N=1 to 10000
+Total Samples: 432,383
+Digit Counts: {
+  "1": 128306,
+  "2": 75683,
+  "3": 54020,
+  "4": 42488,
+  "5": 34281,
+  "6": 29148,
+  "7": 25470,
+  "8": 22631,
+  "9": 20356
+}
+Chi-Squared p-value: 0.0
+MAD Score: 0.00119
+KS D-Max: 0.00535
+Digital Mixing Speed (1/MAD * log10(m)): 4736.024042406061
+Dmix Variance (Total Variation Distance): 0.005345966956051364
+--- Running Generalized Collatz (a=12, b=16, c=-4) on N=1 to 10000 ---
+Collatz Generation Time: 1.25 seconds
+
+--- Running Statistical Tests ---
+
+--- ANALYSIS RESULTS (CONCATENATED SAMPLES) ---
+Parameters: a=12, b=16, c=-4
+Initial Range: N=1 to 10000
+Total Samples: 799,930
+Digit Counts: {
+  "1": 240159,
+  "2": 141155,
+  "3": 100926,
+  "4": 77641,
+  "5": 62299,
+  "6": 53849,
+  "7": 46289,
+  "8": 40608,
+  "9": 37004
+}
+Chi-Squared p-value: 1e-05
+MAD Score: 0.00058
+KS D-Max: 0.00094
+Digital Mixing Speed (1/MAD * log10(m)): 10177.675835451977
+Dmix Variance (Total Variation Distance): 0.0026193717069739365

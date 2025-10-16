@@ -12,9 +12,9 @@ from src.statistical_tests import analyze_conformity
 
 # --- Configuration ---
 TEST_CONFIG = {
-    "param_a": 4,
-    "param_b": 5,
-    "param_c": 1,
+    "param_a": 12,
+    "param_b": 16,
+    "param_c": -4,
     "initial_range": (1, 10000),
     "max_iterations": 1000000
 }
