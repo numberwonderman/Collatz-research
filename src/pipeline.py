@@ -275,8 +275,8 @@ def print_summary_table(results: List[Dict], title: str):
 if __name__ == "__main__":
     # Create a scanner centered at (12, 16, -4) - your test config
     scanner = SwissCheeseParameterScanner(
-        cube_center=(0, 0, 0), 
-        cube_side_length=13  # Scans from (10, 14, -6) to (14, 18, -2)
+        cube_center=(6, 16, -5), 
+        cube_side_length=3 # Scans from (10, 14, -6) to (14, 18, -2)
     )
     
     # Add trivial patterns as holes
@@ -288,7 +288,7 @@ if __name__ == "__main__":
     
     # Scan the cube
     results = scanner.scan_cube(
-        initial_range=(1, 1000),  # Smaller range for testing
+        initial_range=(1, 100000),  # Smaller range for testing
         max_iterations=100000,
         output_file="swiss_cheese_results.json"
     )
