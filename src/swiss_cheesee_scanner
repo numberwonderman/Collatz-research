@@ -1,0 +1,202 @@
+from typing import Set, Tuple, List, Dict
+import itertools
+
+def generalized_collatz(n: int, a: int, b: int, c: int, max_iterations: int = 1000000) -> list[int]:
+    """
+    Generates a generalized Collatz sequence using the parity rule (n/2 if even).
+    For the odd step, it uses (b*n + c), applying the maximal division by 2 
+    (shortcut) only for generalized parameters, but NOT for the standard (3n+1).
+    """
+    if n <= 0:
+        return []
+    
+    sequence = [n]
+    current = n
+    
+    for _ in range(max_iterations):
+        
+        # 1. Termination Check: Stop after 1 has been calculated and appended.
+        if current == 1:
+            break
+            
+        # 2. Magnitude Safety Check
+        if current > 10**50: 
+            break 
+            
+        if current % 2 == 0:
+            # EVEN STEP: Standard Collatz is always division by 2
+            current = current // 2
+        else:
+            # ODD STEP: 
+            numerator = b * current + c
+            
+            if a == 2 and b == 3 and c == 1:
+                # STANDARD COLLATZ (3n+1): No maximal shortcut.
+                current = numerator
+            else:
+                # GENERALIZED COLLATZ: Use the shortcut (maximal division by 2)
+                while numerator % 2 == 0 and numerator > 0:
+                    numerator = numerator // 2
+                current = numerator
+
+        # 3. Append and Check for New Cycle (must happen after the update)
+        if current in sequence:
+            # Cycle detected (a new, non-standard cycle)
+            if current != sequence[-1]:
+                sequence.append(current)
+            break 
+            
+        sequence.append(current)
+        
+    return sequence
+
+
+class SwissCheeseScanner:
+    """
+    Scans through a parameter cube with 'holes' (trivial states) excluded.
+    """
+    
+    def __init__(self, cube_center: Tuple[int, int, int], cube_side_length: int):
+        """
+        Initialize the scanner with a cube centered at (a0, b0, c0).
+        
+        Args:
+            cube_center: (a, b, c) center point
+            cube_side_length: length of cube side (must be odd for symmetric scanning)
+        """
+        self.center = cube_center
+        self.side_length = cube_side_length
+        self.holes: Set[Tuple[int, int, int]] = set()
+        
+        # Calculate bounds
+        half = cube_side_length // 2
+        self.a_range = range(cube_center[0] - half, cube_center[0] + half + 1)
+        self.b_range = range(cube_center[1] - half, cube_center[1] + half + 1)
+        self.c_range = range(cube_center[2] - half, cube_center[2] + half + 1)
+    
+    def add_hole(self, a: int, b: int, c: int):
+        """Add a single trivial state (hole) to skip."""
+        self.holes.add((a, b, c))
+    
+    def add_holes_from_list(self, hole_list: List[Tuple[int, int, int]]):
+        """Add multiple holes at once."""
+        self.holes.update(hole_list)
+    
+    def add_trivial_patterns(self):
+        """Add common trivial/degenerate cases as holes."""
+        trivial = []
+        
+        for a in self.a_range:
+            for b in self.b_range:
+                for c in self.c_range:
+                    # Trivial cases:
+                    # 1. b = 0, c = 0 (collapses to 0)
+                    if b == 0 and c == 0:
+                        trivial.append((a, b, c))
+                    
+                    # 2. b = 1, c = 0 (identity-like)
+                    elif b == 1 and c == 0:
+                        trivial.append((a, b, c))
+                    
+                    # 3. Negative parameters that cause immediate divergence
+                    elif b < 0 or c < 0:
+                        trivial.append((a, b, c))
+        
+        self.add_holes_from_list(trivial)
+        return len(trivial)
+    
+    def scan(self, test_values: List[int] = None, max_iterations: int = 10000) -> Dict:
+        """
+        Scan through the parameter cube, skipping holes.
+        
+        Args:
+            test_values: List of starting values to test each (a,b,c) with
+            max_iterations: Maximum iterations per sequence
+            
+        Returns:
+            Dictionary with results for each parameter combination
+        """
+        if test_values is None:
+            test_values = [1, 3, 5, 7, 9, 11, 13, 15, 27]
+        
+        results = {}
+        total_points = len(self.a_range) * len(self.b_range) * len(self.c_range)
+        scanned = 0
+        skipped = 0
+        
+        for a, b, c in itertools.product(self.a_range, self.b_range, self.c_range):
+            # Skip holes (trivial states)
+            if (a, b, c) in self.holes:
+                skipped += 1
+                continue
+            
+            # Test this parameter combination
+            param_results = {
+                'params': (a, b, c),
+                'converges_to_1': [],
+                'cycles': [],
+                'diverges': []
+            }
+            
+            for n in test_values:
+                seq = generalized_collatz(n, a, b, c, max_iterations)
+                
+                if len(seq) == 0:
+                    continue
+                    
+                # Classify result
+                if seq[-1] == 1:
+                    param_results['converges_to_1'].append(n)
+                elif len(seq) < max_iterations and seq[-1] in seq[:-1]:
+                    # Cycle detected
+                    cycle_start = seq.index(seq[-1])
+                    cycle = seq[cycle_start:]
+                    param_results['cycles'].append((n, cycle))
+                else:
+                    # Diverges or hits iteration limit
+                    param_results['diverges'].append(n)
+            
+            results[(a, b, c)] = param_results
+            scanned += 1
+        
+        print(f"Scanned: {scanned}/{total_points} points ({skipped} holes skipped)")
+        return results
+    
+    def get_interesting_parameters(self, results: Dict) -> List[Tuple[int, int, int]]:
+        """
+        Filter for 'interesting' parameter combinations.
+        Interesting = converges to 1 for at least some test values.
+        """
+        interesting = []
+        
+        for params, data in results.items():
+            # Interesting if it converges to 1 for at least some values
+            if len(data['converges_to_1']) > 0:
+                interesting.append(params)
+        
+        return interesting
+
+
+# Example usage:
+if __name__ == "__main__":
+    # Create a scanner centered at standard Collatz (2, 3, 1)
+    scanner = SwissCheeseScanner(cube_center=(2, 3, 1), cube_side_length=5)
+    
+    # Add trivial patterns as holes
+    num_holes = scanner.add_trivial_patterns()
+    print(f"Added {num_holes} trivial states as holes")
+    
+    # You can also manually add specific holes
+    scanner.add_hole(2, 2, 0)  # Example: specific known trivial case
+    
+    # Scan the parameter space
+    print("\nScanning parameter cube...")
+    results = scanner.scan(test_values=[1, 3, 5, 7, 9, 15, 27])
+    
+    # Find interesting parameters
+    interesting = scanner.get_interesting_parameters(results)
+    print(f"\nFound {len(interesting)} interesting parameter combinations:")
+    for params in interesting[:10]:  # Show first 10
+        a, b, c = params
+        data = results[params]
+        print(f"  ({a}, {b}, {c}): {len(data['converges_to_1'])} values converge to 1")
