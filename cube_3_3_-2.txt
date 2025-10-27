@@ -1,0 +1,117 @@
+Added 0 trivial states as holes
+
+=== SWISS CHEESE CUBE SCAN ===
+Cube center: (3, 3, -2)
+Cube side length: 3
+Total parameter points: 27
+Holes (trivial states): 0
+Points to scan: 27
+Initial range: N=1 to 100000
+==================================================
+
+[1/27] Analyzing (a=2, b=2, c=-3)...
+  ✓ Samples: 15,434,827 | Chi-Sq Stat: 911.4921 | Chi-Sq p-value: 0.0 | MAD: 0.00072 | KS D-Max: 0.00171 | Dmix: 0.003235 | Digital Mix Speed: 9984.030 | Time: 23.69s
+
+[2/27] Analyzing (a=2, b=2, c=-2)...
+  ✓ Samples: 815,024 | Chi-Sq Stat: 27664.5614 | Chi-Sq p-value: 0.0 | MAD: 0.01844 | KS D-Max: 0.05965 | Dmix: 0.082960 | Digital Mix Speed: 320.562 | Time: 0.74s
+
+[3/27] Analyzing (a=2, b=2, c=-1)...
+  ✓ Samples: 15,437,349 | Chi-Sq Stat: 911.4166 | Chi-Sq p-value: 0.0 | MAD: 0.00072 | KS D-Max: 0.00172 | Dmix: 0.003234 | Digital Mix Speed: 9984.129 | Time: 23.25s
+
+[4/27] Analyzing (a=2, b=3, c=-3)...
+  ✓ Samples: 2,488,326 | Chi-Sq Stat: 37441.2622 | Chi-Sq p-value: 0.0 | MAD: 0.01134 | KS D-Max: 0.02788 | Dmix: 0.051035 | Digital Mix Speed: 564.013 | Time: 2.44s
+
+[5/27] Analyzing (a=2, b=3, c=-2)...
+  ✓ Samples: 9,833,914 | Chi-Sq Stat: 649.1712 | Chi-Sq p-value: 0.0 | MAD: 0.00078 | KS D-Max: 0.00154 | Dmix: 0.003510 | Digital Mix Speed: 8965.034 | Time: 12.66s
+
+[6/27] Analyzing (a=2, b=3, c=-1)...
+  ✓ Samples: 2,841,189 | Chi-Sq Stat: 43949.5699 | Chi-Sq p-value: 0.0 | MAD: 0.01052 | KS D-Max: 0.03790 | Dmix: 0.047360 | Digital Mix Speed: 613.451 | Time: 2.79s
+
+[7/27] Analyzing (a=2, b=4, c=-3)...
+  ✓ Samples: 7,843,106 | Chi-Sq Stat: 585.5335 | Chi-Sq p-value: 0.0 | MAD: 0.00072 | KS D-Max: 0.00106 | Dmix: 0.003219 | Digital Mix Speed: 9575.678 | Time: 9.31s
+
+[8/27] Analyzing (a=2, b=4, c=-2)...
+  ✓ Samples: 15,437,349 | Chi-Sq Stat: 911.4166 | Chi-Sq p-value: 0.0 | MAD: 0.00072 | KS D-Max: 0.00172 | Dmix: 0.003234 | Digital Mix Speed: 9984.129 | Time: 25.29s
+
+[9/27] Analyzing (a=2, b=4, c=-1)...
+  ✓ Samples: 7,843,077 | Chi-Sq Stat: 587.6254 | Chi-Sq p-value: 0.0 | MAD: 0.00072 | KS D-Max: 0.00107 | Dmix: 0.003253 | Digital Mix Speed: 9575.676 | Time: 9.26s
+
+[10/27] Analyzing (a=3, b=2, c=-3)...
+  ✓ Samples: 15,367,635 | Chi-Sq Stat: 828.6228 | Chi-Sq p-value: 0.0 | MAD: 0.00074 | KS D-Max: 0.00176 | Dmix: 0.003338 | Digital Mix Speed: 9711.631 | Time: 23.09s
+
+[11/27] Analyzing (a=3, b=2, c=-2)...
+  ✓ Samples: 15,419,264 | Chi-Sq Stat: 683.2481 | Chi-Sq p-value: 0.0 | MAD: 0.00066 | KS D-Max: 0.00167 | Dmix: 0.002973 | Digital Mix Speed: 10891.006 | Time: 23.26s
+
+[12/27] Analyzing (a=3, b=2, c=-1)...
+  ✓ Samples: 15,474,556 | Chi-Sq Stat: 689.3456 | Chi-Sq p-value: 0.0 | MAD: 0.00066 | KS D-Max: 0.00166 | Dmix: 0.002973 | Digital Mix Speed: 10893.361 | Time: 23.02s
+
+[13/27] Analyzing (a=3, b=3, c=-3)...
+  ✓ Samples: 968,841 | Chi-Sq Stat: 21676.1749 | Chi-Sq p-value: 0.0 | MAD: 0.01485 | KS D-Max: 0.03559 | Dmix: 0.066817 | Digital Mix Speed: 403.115 | Time: 0.88s
+
+[14/27] Analyzing (a=3, b=3, c=-2)...
+  ✓ Samples: 9,769,580 | Chi-Sq Stat: 2520.6765 | Chi-Sq p-value: 0.0 | MAD: 0.00147 | KS D-Max: 0.00340 | Dmix: 0.006593 | Digital Mix Speed: 4755.018 | Time: 12.14s
+
+[15/27] Analyzing (a=3, b=3, c=-1)...
+  ✓ Samples: 9,769,562 | Chi-Sq Stat: 2523.5452 | Chi-Sq p-value: 0.0 | MAD: 0.00147 | KS D-Max: 0.00340 | Dmix: 0.006599 | Digital Mix Speed: 4755.017 | Time: 12.27s
+
+[16/27] Analyzing (a=3, b=4, c=-3)...
+  ✓ Samples: 7,781,869 | Chi-Sq Stat: 753.2687 | Chi-Sq p-value: 0.0 | MAD: 0.00076 | KS D-Max: 0.00139 | Dmix: 0.003435 | Digital Mix Speed: 9067.216 | Time: 9.07s
+
+[17/27] Analyzing (a=3, b=4, c=-2)...
+  ✓ Samples: 35,302,686 | Chi-Sq Stat: 5727.3674 | Chi-Sq p-value: 0.0 | MAD: 0.00083 | KS D-Max: 0.00187 | Dmix: 0.003717 | Digital Mix Speed: 9093.744 | Time: 92.49s
+
+[18/27] Analyzing (a=3, b=4, c=-1)...
+  ✓ Samples: 35,668,568 | Chi-Sq Stat: 5964.6650 | Chi-Sq p-value: 0.0 | MAD: 0.00104 | KS D-Max: 0.00288 | Dmix: 0.004688 | Digital Mix Speed: 7261.813 | Time: 93.13s
+
+[19/27] Analyzing (a=4, b=2, c=-3)...
+  ✓ Samples: 15,336,117 | Chi-Sq Stat: 1113.1810 | Chi-Sq p-value: 0.0 | MAD: 0.00084 | KS D-Max: 0.00205 | Dmix: 0.003788 | Digital Mix Speed: 8554.423 | Time: 22.97s
+
+[20/27] Analyzing (a=4, b=2, c=-2)...
+  ✓ Samples: 14,868,980 | Chi-Sq Stat: 675.1741 | Chi-Sq p-value: 0.0 | MAD: 0.00065 | KS D-Max: 0.00152 | Dmix: 0.002905 | Digital Mix Speed: 11034.279 | Time: 22.66s
+
+[21/27] Analyzing (a=4, b=2, c=-1)...
+  ✓ Samples: 15,338,673 | Chi-Sq Stat: 1108.7904 | Chi-Sq p-value: 0.0 | MAD: 0.00084 | KS D-Max: 0.00205 | Dmix: 0.003780 | Digital Mix Speed: 8554.509 | Time: 22.90s
+
+[22/27] Analyzing (a=4, b=3, c=-3)...
+  ✓ Samples: 9,829,383 | Chi-Sq Stat: 658.8609 | Chi-Sq p-value: 0.0 | MAD: 0.00062 | KS D-Max: 0.00160 | Dmix: 0.002810 | Digital Mix Speed: 11278.268 | Time: 12.35s
+
+[23/27] Analyzing (a=4, b=3, c=-2)...
+  ✓ Samples: 9,816,618 | Chi-Sq Stat: 668.5226 | Chi-Sq p-value: 0.0 | MAD: 0.00064 | KS D-Max: 0.00167 | Dmix: 0.002902 | Digital Mix Speed: 10924.940 | Time: 12.38s
+
+[24/27] Analyzing (a=4, b=3, c=-1)...
+  ✓ Samples: 9,829,382 | Chi-Sq Stat: 672.8503 | Chi-Sq p-value: 0.0 | MAD: 0.00064 | KS D-Max: 0.00162 | Dmix: 0.002869 | Digital Mix Speed: 10925.822 | Time: 12.18s
+
+[25/27] Analyzing (a=4, b=4, c=-3)...
+  ✓ Samples: 7,759,352 | Chi-Sq Stat: 1888.7573 | Chi-Sq p-value: 0.0 | MAD: 0.00098 | KS D-Max: 0.00200 | Dmix: 0.004429 | Digital Mix Speed: 7030.434 | Time: 8.95s
+
+[26/27] Analyzing (a=4, b=4, c=-2)...
+  ✓ Samples: 7,759,327 | Chi-Sq Stat: 1917.1756 | Chi-Sq p-value: 0.0 | MAD: 0.00099 | KS D-Max: 0.00201 | Dmix: 0.004464 | Digital Mix Speed: 6959.418 | Time: 9.12s
+
+[27/27] Analyzing (a=4, b=4, c=-1)...
+  ✓ Samples: 7,759,321 | Chi-Sq Stat: 1895.3378 | Chi-Sq p-value: 0.0 | MAD: 0.00099 | KS D-Max: 0.00201 | Dmix: 0.004440 | Digital Mix Speed: 6959.418 | Time: 8.99s
+
+==================================================
+Scan complete! Scanned: 27, Skipped: 0
+Results saved to swiss_cheese_results.json
+
+================================================================================
+               TOP 5: BEST BENFORD'S LAW CONFORMITY (Lowest MAD)                
+================================================================================
+Rank  (a, b, c)           MAD         Dmix        Mix Speed      Samples   
+--------------------------------------------------------------------------------
+1     (4, 3, -3)          0.000620    0.002810    11278.27       9,829,383 
+2     (4, 3, -2)          0.000640    0.002902    10924.94       9,816,618 
+3     (4, 3, -1)          0.000640    0.002869    10925.82       9,829,382 
+4     (4, 2, -2)          0.000650    0.002905    11034.28       14,868,980
+5     (3, 2, -2)          0.000660    0.002973    10891.01       15,419,264
+
+================================================================================
+                      TOP 5: FASTEST DIGITAL MIXING SPEED                       
+================================================================================
+Rank  (a, b, c)           MAD         Dmix        Mix Speed      Samples   
+--------------------------------------------------------------------------------
+1     (4, 3, -3)          0.000620    0.002810    11278.27       9,829,383 
+2     (4, 2, -2)          0.000650    0.002905    11034.28       14,868,980
+3     (4, 3, -1)          0.000640    0.002869    10925.82       9,829,382 
+4     (4, 3, -2)          0.000640    0.002902    10924.94       9,816,618 
+5     (3, 2, -1)          0.000660    0.002973    10893.36       15,474,556

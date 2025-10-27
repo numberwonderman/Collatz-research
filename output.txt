@@ -1,0 +1,39 @@
+Added 6 trivial states as holes
+
+=== SWISS CHEESE CUBE SCAN ===
+Cube center: (2, 3, 1)
+Cube side length: 3
+Total parameter points: 27
+Holes (trivial states): 6
+Points to scan: 21
+Initial range: N=1 to 100000
+==================================================
+
+[1/21] Analyzing (a=1, b=2, c=1)...
+  ✓ Samples: 99,999 | Chi-Sq Stat: 40169.4276 | Chi-Sq p-value: 0.0 | MAD: 0.05972 | KS D-Max: 0.26873 | Dmix: 0.268727 | Digital Mix Speed: 83.724 | Time: 0.23s
+
+[2/21] Analyzing (a=1, b=2, c=2)...
+  ✓ Samples: 99,999 | Chi-Sq Stat: 40169.4276 | Chi-Sq p-value: 0.0 | MAD: 0.05972 | KS D-Max: 0.26873 | Dmix: 0.268727 | Digital Mix Speed: 83.724 | Time: 0.20s
+
+[3/21] Analyzing (a=1, b=3, c=0)...
+  ✓ Samples: 99,999 | Chi-Sq Stat: 40169.4276 | Chi-Sq p-value: 0.0 | MAD: 0.05972 | KS D-Max: 0.26873 | Dmix: 0.268727 | Digital Mix Speed: 83.724 | Time: 0.21s
+
+[4/21] Analyzing (a=1, b=3, c=1)...
+  ✓ Samples: 99,999 | Chi-Sq Stat: 40169.4276 | Chi-Sq p-value: 0.0 | MAD: 0.05972 | KS D-Max: 0.26873 | Dmix: 0.268727 | Digital Mix Speed: 83.724 | Time: 0.20s
+
+[5/21] Analyzing (a=1, b=3, c=2)...
+  ✓ Samples: 99,999 | Chi-Sq Stat: 40169.4276 | Chi-Sq p-value: 0.0 | MAD: 0.05972 | KS D-Max: 0.26873 | Dmix: 0.268727 | Digital Mix Speed: 83.724 | Time: 0.18s
+
+[6/21] Analyzing (a=1, b=4, c=1)...
+  ✓ Samples: 99,999 | Chi-Sq Stat: 40169.4276 | Chi-Sq p-value: 0.0 | MAD: 0.05972 | KS D-Max: 0.26873 | Dmix: 0.268727 | Digital Mix Speed: 83.724 | Time: 0.20s
+
+[7/21] Analyzing (a=1, b=4, c=2)...
+  ✓ Samples: 99,999 | Chi-Sq Stat: 40169.4276 | Chi-Sq p-value: 0.0 | MAD: 0.05972 | KS D-Max: 0.26873 | Dmix: 0.268727 | Digital Mix Speed: 83.724 | Time: 0.17s
+
+[8/21] Analyzing (a=2, b=2, c=1)...
+  ✓ Samples: 15,437,213 | Chi-Sq Stat: 913.6264 | Chi-Sq p-value: 0.0 | MAD: 0.00072 | KS D-Max: 0.00172 | Dmix: 0.003237 | Digital Mix Speed: 9984.123 | Time: 44.33s
+
+[9/21] Analyzing (a=2, b=2, c=2)...
+  ✓ Samples: 853,899 | Chi-Sq Stat: 47341.4804 | Chi-Sq p-value: 0.0 | MAD: 0.02317 | KS D-Max: 0.07423 | Dmix: 0.104286 | Digital Mix Speed: 255.995 | Time: 1.59s
+
+[10/21] Analyzing (a=2, b=3, c=0)...

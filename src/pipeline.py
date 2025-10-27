@@ -209,10 +209,14 @@ class SwissCheeseParameterScanner:
                 
                 # Print brief summary
                 print(f"  ✓ Samples: {analysis['total_samples']:,} | "
-                      f"MAD: {analysis.get('mad', 'N/A'):.6f} | "
-                      f"Dmix: {analysis.get('dmix_variance', 'N/A'):.6f} | "
-                      f"Time: {analysis['computation_time']:.2f}s")
-                
+      f"Chi-Sq Stat: {analysis.get('chi_squared_statistic', 'N/A'):.4f} | "
+      f"Chi-Sq p-value: {analysis.get('p_value', 'N/A')} | "
+      f"MAD: {analysis.get('mad', 'N/A'):.5f} | "
+      f"KS D-Max: {analysis.get('ks_d_max', 'N/A'):.5f} | "
+      f"Dmix: {analysis.get('dmix_variance', 'N/A'):.6f} | "
+      f"Digital Mix Speed: {analysis.get('digital_mixing_speed', 'N/A'):.3f} | "
+      f"Time: {analysis['computation_time']:.2f}s")
+
             except Exception as e:
                 print(f"  ✗ Error: {e}")
                 continue
@@ -275,8 +279,9 @@ def print_summary_table(results: List[Dict], title: str):
 if __name__ == "__main__":
     # Create a scanner centered at (12, 16, -4) - your test config
     scanner = SwissCheeseParameterScanner(
-        cube_center=(6, 16, -5), 
-        cube_side_length=3 # Scans from (10, 14, -6) to (14, 18, -2)
+        cube_center=(6, 8, -2), 
+        cube_side_length=3
+          # Scans from (10, 14, -6) to (14, 18, -2)
     )
     
     # Add trivial patterns as holes

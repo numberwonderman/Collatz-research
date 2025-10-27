@@ -2,838 +2,838 @@
   {
     "parameters": [
       5,
-      15,
-      -6
-    ],
-    "initial_range": [
-      1,
-      100000
-    ],
-    "digit_frequencies": {
-      "1": 1213649,
-      "2": 708507,
-      "3": 503376,
-      "4": 397647,
-      "5": 317356,
-      "6": 274540,
-      "7": 237694,
-      "8": 209709,
-      "9": 191148
-    },
-    "total_samples": 4053626,
-    "computation_time": 4.214309453964233,
-    "chi_squared_statistic": 459.2671,
-    "p_value": 0.0,
-    "degrees_of_freedom": 8,
-    "ks_d_max": 0.0037,
-    "mad": 0.00102,
-    "digital_mixing_speed": 6478.278114569553,
-    "dmix_variance": 0.004590752106349218
-  },
-  {
-    "parameters": [
-      5,
-      15,
-      -5
-    ],
-    "initial_range": [
-      1,
-      100000
-    ],
-    "digit_frequencies": {
-      "1": 3074050,
-      "2": 1810993,
-      "3": 1257207,
-      "4": 983252,
-      "5": 810030,
-      "6": 683776,
-      "7": 595702,
-      "8": 527821,
-      "9": 470576
-    },
-    "total_samples": 10213407,
-    "computation_time": 14.015662431716919,
-    "chi_squared_statistic": 507.8494,
-    "p_value": 0.0,
-    "degrees_of_freedom": 8,
-    "ks_d_max": 0.00131,
-    "mad": 0.00056,
-    "digital_mixing_speed": 12516.376140546652,
-    "dmix_variance": 0.002532400519965238
-  },
-  {
-    "parameters": [
-      5,
-      15,
-      -4
-    ],
-    "initial_range": [
-      1,
-      100000
-    ],
-    "digit_frequencies": {
-      "1": 1213673,
-      "2": 708512,
-      "3": 503327,
-      "4": 397669,
-      "5": 317335,
-      "6": 274562,
-      "7": 237699,
-      "8": 209689,
-      "9": 191158
-    },
-    "total_samples": 4053624,
-    "computation_time": 4.0593860149383545,
-    "chi_squared_statistic": 461.333,
-    "p_value": 0.0,
-    "degrees_of_freedom": 8,
-    "ks_d_max": 0.0037,
-    "mad": 0.00102,
-    "digital_mixing_speed": 6478.2779044963945,
-    "dmix_variance": 0.004600532662964615
-  },
-  {
-    "parameters": [
-      5,
-      16,
-      -6
-    ],
-    "initial_range": [
-      1,
-      100000
-    ],
-    "digit_frequencies": {
-      "1": 1654864,
-      "2": 957860,
-      "3": 678417,
-      "4": 528769,
-      "5": 433218,
-      "6": 371032,
-      "7": 324275,
-      "8": 289151,
-      "9": 259192
-    },
-    "total_samples": 5496778,
-    "computation_time": 6.265822172164917,
-    "chi_squared_statistic": 825.1813,
-    "p_value": 0.0,
-    "degrees_of_freedom": 8,
-    "ks_d_max": 0.0044,
-    "mad": 0.00099,
-    "digital_mixing_speed": 6808.19009832337,
-    "dmix_variance": 0.00443270881149584
-  },
-  {
-    "parameters": [
-      5,
-      16,
-      -5
-    ],
-    "initial_range": [
-      1,
-      100000
-    ],
-    "digit_frequencies": {
-      "1": 1198971,
-      "2": 693050,
-      "3": 488109,
-      "4": 387212,
-      "5": 306722,
-      "6": 269408,
-      "7": 231000,
-      "8": 200244,
-      "9": 185729
-    },
-    "total_samples": 3960445,
-    "computation_time": 3.9996063709259033,
-    "chi_squared_statistic": 552.6975,
-    "p_value": 0.0,
-    "degrees_of_freedom": 8,
-    "ks_d_max": 0.00196,
-    "mad": 0.00114,
-    "digital_mixing_speed": 5787.494724980408,
-    "dmix_variance": 0.005117471128784867
-  },
-  {
-    "parameters": [
-      5,
-      16,
-      -4
-    ],
-    "initial_range": [
-      1,
-      100000
-    ],
-    "digit_frequencies": {
-      "1": 1653665,
-      "2": 959009,
-      "3": 679494,
-      "4": 526690,
-      "5": 435421,
-      "6": 372104,
-      "7": 323103,
-      "8": 288906,
-      "9": 260722
-    },
-    "total_samples": 5499114,
-    "computation_time": 6.2482476234436035,
-    "chi_squared_statistic": 880.4397,
-    "p_value": 0.0,
-    "degrees_of_freedom": 8,
-    "ks_d_max": 0.00452,
-    "mad": 0.001,
-    "digital_mixing_speed": 6740.292722965703,
-    "dmix_variance": 0.004521352912887397
-  },
-  {
-    "parameters": [
-      5,
-      17,
-      -6
-    ],
-    "initial_range": [
-      1,
-      100000
-    ],
-    "digit_frequencies": {
-      "1": 1231127,
-      "2": 706642,
-      "3": 504396,
-      "4": 392131,
-      "5": 325900,
-      "6": 277776,
-      "7": 242849,
-      "8": 214810,
-      "9": 196865
-    },
-    "total_samples": 4092496,
-    "computation_time": 4.322859287261963,
-    "chi_squared_statistic": 1243.639,
-    "p_value": 0.0,
-    "degrees_of_freedom": 8,
-    "ks_d_max": 0.00641,
-    "mad": 0.00142,
-    "digital_mixing_speed": 4656.3297631023615,
-    "dmix_variance": 0.006410744656840099
-  },
-  {
-    "parameters": [
-      5,
-      17,
-      -5
-    ],
-    "initial_range": [
-      1,
-      100000
-    ],
-    "digit_frequencies": {
-      "1": 1178040,
-      "2": 671882,
-      "3": 479213,
-      "4": 365220,
-      "5": 300332,
-      "6": 265826,
-      "7": 227329,
-      "8": 199486,
-      "9": 186613
-    },
-    "total_samples": 3873941,
-    "computation_time": 3.8656532764434814,
-    "chi_squared_statistic": 1430.3673,
-    "p_value": 0.0,
-    "degrees_of_freedom": 8,
-    "ks_d_max": 0.00512,
-    "mad": 0.00182,
-    "digital_mixing_speed": 3619.864286891271,
-    "dmix_variance": 0.00818096884540671
-  },
-  {
-    "parameters": [
-      5,
-      17,
-      -4
-    ],
-    "initial_range": [
-      1,
-      100000
-    ],
-    "digit_frequencies": {
-      "1": 1231201,
-      "2": 705712,
-      "3": 504327,
-      "4": 391987,
-      "5": 325938,
-      "6": 278051,
-      "7": 242576,
-      "8": 215128,
-      "9": 197457
-    },
-    "total_samples": 4092377,
-    "computation_time": 4.1801581382751465,
-    "chi_squared_statistic": 1361.7571,
-    "p_value": 0.0,
-    "degrees_of_freedom": 8,
-    "ks_d_max": 0.00665,
-    "mad": 0.00148,
-    "digital_mixing_speed": 4467.551104848958,
-    "dmix_variance": 0.006651823484156889
-  },
-  {
-    "parameters": [
-      6,
-      15,
-      -6
-    ],
-    "initial_range": [
-      1,
-      100000
-    ],
-    "digit_frequencies": {
-      "1": 1223720,
-      "2": 715561,
-      "3": 508983,
-      "4": 399708,
-      "5": 323782,
-      "6": 278208,
-      "7": 242491,
-      "8": 213320,
-      "9": 193366
-    },
-    "total_samples": 4099139,
-    "computation_time": 4.154952764511108,
-    "chi_squared_statistic": 566.5268,
-    "p_value": 0.0,
-    "degrees_of_freedom": 8,
-    "ks_d_max": 0.0048,
-    "mad": 0.00111,
-    "digital_mixing_speed": 5957.380761532434,
-    "dmix_variance": 0.004990444221219883
-  },
-  {
-    "parameters": [
-      6,
-      15,
-      -5
-    ],
-    "initial_range": [
-      1,
-      100000
-    ],
-    "digit_frequencies": {
-      "1": 1211801,
-      "2": 708048,
-      "3": 503035,
-      "4": 397298,
-      "5": 316851,
-      "6": 274119,
-      "7": 238056,
-      "8": 208811,
-      "9": 190068
-    },
-    "total_samples": 4048087,
-    "computation_time": 4.05558705329895,
-    "chi_squared_statistic": 413.7841,
-    "p_value": 0.0,
-    "degrees_of_freedom": 8,
-    "ks_d_max": 0.00353,
-    "mad": 0.00099,
-    "digital_mixing_speed": 6673.989734979439,
-    "dmix_variance": 0.004443777241948749
-  },
-  {
-    "parameters": [
-      6,
-      15,
-      -4
-    ],
-    "initial_range": [
-      1,
-      100000
-    ],
-    "digit_frequencies": {
-      "1": 1211787,
-      "2": 708048,
-      "3": 503040,
-      "4": 397289,
-      "5": 316841,
-      "6": 274145,
-      "7": 238053,
-      "8": 208788,
-      "9": 190096
-    },
-    "total_samples": 4048087,
-    "computation_time": 4.206575632095337,
-    "chi_squared_statistic": 415.4854,
-    "p_value": 0.0,
-    "degrees_of_freedom": 8,
-    "ks_d_max": 0.00354,
-    "mad": 0.00099,
-    "digital_mixing_speed": 6673.989734979439,
-    "dmix_variance": 0.004448470816963326
-  },
-  {
-    "parameters": [
-      6,
-      16,
-      -6
-    ],
-    "initial_range": [
-      1,
-      100000
-    ],
-    "digit_frequencies": {
-      "1": 1203084,
-      "2": 695298,
-      "3": 486462,
-      "4": 391457,
-      "5": 307772,
-      "6": 270792,
-      "7": 234527,
-      "8": 201560,
-      "9": 184762
-    },
-    "total_samples": 3975714,
-    "computation_time": 3.9580628871917725,
-    "chi_squared_statistic": 742.7144,
-    "p_value": 0.0,
-    "degrees_of_freedom": 8,
-    "ks_d_max": 0.00242,
-    "mad": 0.00134,
-    "digital_mixing_speed": 4924.936667991984,
-    "dmix_variance": 0.006008217960241612
-  },
-  {
-    "parameters": [
-      6,
-      16,
-      -5
-    ],
-    "initial_range": [
-      1,
-      100000
-    ],
-    "digit_frequencies": {
-      "1": 1199915,
-      "2": 692807,
-      "3": 484131,
-      "4": 389421,
-      "5": 304123,
-      "6": 269551,
-      "7": 231869,
-      "8": 198445,
-      "9": 184220
-    },
-    "total_samples": 3954482,
-    "computation_time": 3.960350275039673,
-    "chi_squared_statistic": 899.8168,
-    "p_value": 0.0,
-    "degrees_of_freedom": 8,
-    "ks_d_max": 0.0024,
-    "mad": 0.00148,
-    "digital_mixing_speed": 4457.492975041371,
-    "dmix_variance": 0.006654282613743168
-  },
-  {
-    "parameters": [
-      6,
-      16,
-      -4
-    ],
-    "initial_range": [
-      1,
-      100000
-    ],
-    "digit_frequencies": {
-      "1": 2396541,
-      "2": 1394270,
-      "3": 988269,
-      "4": 771963,
-      "5": 629444,
-      "6": 539340,
-      "7": 464986,
-      "8": 413485,
-      "9": 372978
-    },
-    "total_samples": 7971276,
-    "computation_time": 10.058781385421753,
-    "chi_squared_statistic": 473.8186,
-    "p_value": 0.0,
-    "degrees_of_freedom": 8,
-    "ks_d_max": 0.00281,
-    "mad": 0.00062,
-    "digital_mixing_speed": 11131.496526678688,
-    "dmix_variance": 0.0028065000575979264
-  },
-  {
-    "parameters": [
-      6,
-      17,
-      -6
-    ],
-    "initial_range": [
-      1,
-      100000
-    ],
-    "digit_frequencies": {
-      "1": 1176587,
-      "2": 671230,
-      "3": 477614,
-      "4": 364561,
-      "5": 299074,
-      "6": 265358,
-      "7": 226917,
-      "8": 199243,
-      "9": 185859
-    },
-    "total_samples": 3866443,
-    "computation_time": 3.957319498062134,
-    "chi_squared_statistic": 1431.9483,
-    "p_value": 0.0,
-    "degrees_of_freedom": 8,
-    "ks_d_max": 0.00507,
-    "mad": 0.00186,
-    "digital_mixing_speed": 3541.5653828447425,
-    "dmix_variance": 0.00834956973685005
-  },
-  {
-    "parameters": [
-      6,
-      17,
-      -5
-    ],
-    "initial_range": [
-      1,
-      100000
-    ],
-    "digit_frequencies": {
-      "1": 1176247,
-      "2": 675104,
-      "3": 481848,
-      "4": 368501,
-      "5": 302662,
-      "6": 266760,
-      "7": 229038,
-      "8": 200725,
-      "9": 186380
-    },
-    "total_samples": 3887265,
-    "computation_time": 3.875920534133911,
-    "chi_squared_statistic": 1101.5623,
-    "p_value": 0.0,
-    "degrees_of_freedom": 8,
-    "ks_d_max": 0.00528,
-    "mad": 0.00152,
-    "digital_mixing_speed": 4335.2922026777,
-    "dmix_variance": 0.006838163651777907
-  },
-  {
-    "parameters": [
-      6,
-      17,
-      -4
-    ],
-    "initial_range": [
-      1,
-      100000
-    ],
-    "digit_frequencies": {
-      "1": 1176402,
-      "2": 675147,
-      "3": 481912,
-      "4": 368443,
-      "5": 302766,
-      "6": 266617,
-      "7": 229309,
-      "8": 200646,
-      "9": 186223
-    },
-    "total_samples": 3887465,
-    "computation_time": 3.988957643508911,
-    "chi_squared_statistic": 1085.6151,
-    "p_value": 0.0,
-    "degrees_of_freedom": 8,
-    "ks_d_max": 0.00524,
-    "mad": 0.00152,
-    "digital_mixing_speed": 4335.3069026121775,
-    "dmix_variance": 0.006823001230563484
-  },
-  {
-    "parameters": [
       7,
-      15,
-      -6
+      -3
     ],
     "initial_range": [
       1,
       100000
     ],
     "digit_frequencies": {
-      "1": 1580596,
-      "2": 908660,
-      "3": 648092,
-      "4": 504405,
-      "5": 412440,
-      "6": 351889,
-      "7": 311929,
-      "8": 272114,
-      "9": 247357
+      "1": 1728562,
+      "2": 1021920,
+      "3": 741311,
+      "4": 585515,
+      "5": 478100,
+      "6": 409212,
+      "7": 340356,
+      "8": 305135,
+      "9": 271842
     },
-    "total_samples": 5237482,
-    "computation_time": 5.732340335845947,
-    "chi_squared_statistic": 842.4099,
+    "total_samples": 5881953,
+    "computation_time": 6.747752904891968,
+    "chi_squared_statistic": 2684.4186,
     "p_value": 0.0,
     "degrees_of_freedom": 8,
-    "ks_d_max": 0.00408,
-    "mad": 0.00107,
-    "digital_mixing_speed": 6279.553778886367,
-    "dmix_variance": 0.004833808194786533
+    "ks_d_max": 0.00951,
+    "mad": 0.00214,
+    "digital_mixing_speed": 3163.327827072926,
+    "dmix_variance": 0.009635014435397257
   },
   {
     "parameters": [
+      5,
       7,
-      15,
-      -5
+      -2
     ],
     "initial_range": [
       1,
       100000
     ],
     "digit_frequencies": {
-      "1": 1580558,
-      "2": 908972,
-      "3": 648858,
-      "4": 504298,
-      "5": 411272,
-      "6": 353122,
-      "7": 311523,
-      "8": 271857,
-      "9": 247438
+      "1": 1730187,
+      "2": 1021653,
+      "3": 741604,
+      "4": 585521,
+      "5": 477972,
+      "6": 409502,
+      "7": 341122,
+      "8": 304643,
+      "9": 271631
     },
-    "total_samples": 5237898,
-    "computation_time": 5.760167121887207,
-    "chi_squared_statistic": 825.8762,
+    "total_samples": 5883835,
+    "computation_time": 6.349923849105835,
+    "chi_squared_statistic": 2617.354,
     "p_value": 0.0,
     "degrees_of_freedom": 8,
-    "ks_d_max": 0.00418,
-    "mad": 0.00109,
-    "digital_mixing_speed": 6164.364254087251,
-    "dmix_variance": 0.004908928324608496
+    "ks_d_max": 0.00943,
+    "mad": 0.0021,
+    "digital_mixing_speed": 3223.64785015929,
+    "dmix_variance": 0.009442104530280406
   },
   {
     "parameters": [
+      5,
       7,
-      15,
-      -4
+      -1
     ],
     "initial_range": [
       1,
       100000
     ],
     "digit_frequencies": {
-      "1": 1580344,
-      "2": 909831,
-      "3": 648110,
-      "4": 504737,
-      "5": 412354,
-      "6": 352940,
-      "7": 311154,
-      "8": 271173,
-      "9": 247506
+      "1": 1728815,
+      "2": 1022170,
+      "3": 742289,
+      "4": 584300,
+      "5": 477633,
+      "6": 410056,
+      "7": 340265,
+      "8": 305462,
+      "9": 272148
     },
-    "total_samples": 5238149,
-    "computation_time": 5.668445587158203,
-    "chi_squared_statistic": 758.8911,
+    "total_samples": 5883138,
+    "computation_time": 6.589063882827759,
+    "chi_squared_statistic": 2680.145,
     "p_value": 0.0,
     "degrees_of_freedom": 8,
-    "ks_d_max": 0.00395,
-    "mad": 0.00103,
-    "digital_mixing_speed": 6523.473638681619,
-    "dmix_variance": 0.004619995209862296
+    "ks_d_max": 0.00952,
+    "mad": 0.00215,
+    "digital_mixing_speed": 3148.6553654399495,
+    "dmix_variance": 0.0096708272366447
   },
   {
     "parameters": [
-      7,
-      16,
-      -6
+      5,
+      8,
+      -3
     ],
     "initial_range": [
       1,
       100000
     ],
     "digit_frequencies": {
-      "1": 1201273,
-      "2": 696608,
-      "3": 493409,
-      "4": 388559,
-      "5": 312335,
-      "6": 272785,
-      "7": 233415,
-      "8": 203842,
-      "9": 190053
+      "1": 1631884,
+      "2": 957295,
+      "3": 686079,
+      "4": 538453,
+      "5": 446201,
+      "6": 382129,
+      "7": 331384,
+      "8": 285073,
+      "9": 255592
     },
-    "total_samples": 3992279,
-    "computation_time": 4.714104652404785,
-    "chi_squared_statistic": 596.6842,
+    "total_samples": 5514090,
+    "computation_time": 6.056667804718018,
+    "chi_squared_statistic": 1872.3011,
     "p_value": 0.0,
     "degrees_of_freedom": 8,
-    "ks_d_max": 0.00361,
-    "mad": 0.00092,
-    "digital_mixing_speed": 7175.240091630776,
-    "dmix_variance": 0.004121261833724757
+    "ks_d_max": 0.00808,
+    "mad": 0.0018,
+    "digital_mixing_speed": 3745.26325016955,
+    "dmix_variance": 0.008080204998758448
   },
   {
     "parameters": [
-      7,
-      16,
-      -5
+      5,
+      8,
+      -2
     ],
     "initial_range": [
       1,
       100000
     ],
     "digit_frequencies": {
-      "1": 1201387,
-      "2": 696392,
-      "3": 493465,
-      "4": 388570,
-      "5": 312452,
-      "6": 272587,
-      "7": 233540,
-      "8": 204116,
-      "9": 189860
+      "1": 1634040,
+      "2": 958479,
+      "3": 685527,
+      "4": 538158,
+      "5": 446224,
+      "6": 381563,
+      "7": 331393,
+      "8": 284140,
+      "9": 255632
     },
-    "total_samples": 3992369,
-    "computation_time": 6.801154375076294,
-    "chi_squared_statistic": 574.7912,
+    "total_samples": 5515156,
+    "computation_time": 5.7931177616119385,
+    "chi_squared_statistic": 1717.4183,
     "p_value": 0.0,
     "degrees_of_freedom": 8,
-    "ks_d_max": 0.00361,
+    "ks_d_max": 0.00769,
+    "mad": 0.00171,
+    "digital_mixing_speed": 3942.4314627307544,
+    "dmix_variance": 0.007689496640232763
+  },
+  {
+    "parameters": [
+      5,
+      8,
+      -1
+    ],
+    "initial_range": [
+      1,
+      100000
+    ],
+    "digit_frequencies": {
+      "1": 1634283,
+      "2": 956092,
+      "3": 686252,
+      "4": 537909,
+      "5": 446055,
+      "6": 382316,
+      "7": 331643,
+      "8": 285616,
+      "9": 255664
+    },
+    "total_samples": 5515830,
+    "computation_time": 5.964861154556274,
+    "chi_squared_statistic": 1860.3365,
+    "p_value": 0.0,
+    "degrees_of_freedom": 8,
+    "ks_d_max": 0.00802,
+    "mad": 0.00178,
+    "digital_mixing_speed": 3787.421838532174,
+    "dmix_variance": 0.008019384565244855
+  },
+  {
+    "parameters": [
+      5,
+      9,
+      -3
+    ],
+    "initial_range": [
+      1,
+      100000
+    ],
+    "digit_frequencies": {
+      "1": 1455559,
+      "2": 855340,
+      "3": 620997,
+      "4": 493899,
+      "5": 415194,
+      "6": 354092,
+      "7": 302719,
+      "8": 262893,
+      "9": 227918
+    },
+    "total_samples": 4988611,
+    "computation_time": 5.159810304641724,
+    "chi_squared_statistic": 5361.61,
+    "p_value": 0.0,
+    "degrees_of_freedom": 8,
+    "ks_d_max": 0.01434,
+    "mad": 0.0032,
+    "digital_mixing_speed": 2093.1186375032885,
+    "dmix_variance": 0.014411910678535138
+  },
+  {
+    "parameters": [
+      5,
+      9,
+      -2
+    ],
+    "initial_range": [
+      1,
+      100000
+    ],
+    "digit_frequencies": {
+      "1": 1455188,
+      "2": 855373,
+      "3": 620744,
+      "4": 494016,
+      "5": 414977,
+      "6": 354345,
+      "7": 302701,
+      "8": 262889,
+      "9": 227898
+    },
+    "total_samples": 4988131,
+    "computation_time": 5.305794954299927,
+    "chi_squared_statistic": 5397.0498,
+    "p_value": 0.0,
+    "degrees_of_freedom": 8,
+    "ks_d_max": 0.0144,
+    "mad": 0.00322,
+    "digital_mixing_speed": 2080.104922529904,
+    "dmix_variance": 0.014473449825325623
+  },
+  {
+    "parameters": [
+      5,
+      9,
+      -1
+    ],
+    "initial_range": [
+      1,
+      100000
+    ],
+    "digit_frequencies": {
+      "1": 1455288,
+      "2": 855196,
+      "3": 620759,
+      "4": 494052,
+      "5": 415028,
+      "6": 354393,
+      "7": 302680,
+      "8": 262769,
+      "9": 227827
+    },
+    "total_samples": 4987992,
+    "computation_time": 5.255412817001343,
+    "chi_squared_statistic": 5403.9112,
+    "p_value": 0.0,
+    "degrees_of_freedom": 8,
+    "ks_d_max": 0.0144,
+    "mad": 0.00322,
+    "digital_mixing_speed": 2080.1011640568545,
+    "dmix_variance": 0.014482464510903133
+  },
+  {
+    "parameters": [
+      6,
+      7,
+      -3
+    ],
+    "initial_range": [
+      1,
+      100000
+    ],
+    "digit_frequencies": {
+      "1": 1641812,
+      "2": 976656,
+      "3": 713179,
+      "4": 555440,
+      "5": 453179,
+      "6": 383646,
+      "7": 327180,
+      "8": 287483,
+      "9": 255258
+    },
+    "total_samples": 5593833,
+    "computation_time": 6.174178600311279,
+    "chi_squared_statistic": 2237.5955,
+    "p_value": 0.0,
+    "degrees_of_freedom": 8,
+    "ks_d_max": 0.00902,
+    "mad": 0.00203,
+    "digital_mixing_speed": 3323.994825945246,
+    "dmix_variance": 0.009147641759728386
+  },
+  {
+    "parameters": [
+      6,
+      7,
+      -2
+    ],
+    "initial_range": [
+      1,
+      100000
+    ],
+    "digit_frequencies": {
+      "1": 1652207,
+      "2": 981752,
+      "3": 716029,
+      "4": 561528,
+      "5": 459604,
+      "6": 389830,
+      "7": 330911,
+      "8": 290901,
+      "9": 258105
+    },
+    "total_samples": 5640867,
+    "computation_time": 6.097045183181763,
+    "chi_squared_statistic": 2790.1494,
+    "p_value": 0.0,
+    "degrees_of_freedom": 8,
+    "ks_d_max": 0.01018,
+    "mad": 0.00226,
+    "digital_mixing_speed": 2987.3211770259713,
+    "dmix_variance": 0.010180254073223517
+  },
+  {
+    "parameters": [
+      6,
+      7,
+      -1
+    ],
+    "initial_range": [
+      1,
+      100000
+    ],
+    "digit_frequencies": {
+      "1": 2573876,
+      "2": 1523715,
+      "3": 1093411,
+      "4": 848975,
+      "5": 694195,
+      "6": 591227,
+      "7": 500753,
+      "8": 443266,
+      "9": 400629
+    },
+    "total_samples": 8670047,
+    "computation_time": 10.916933059692383,
+    "chi_squared_statistic": 1025.3226,
+    "p_value": 0.0,
+    "degrees_of_freedom": 8,
+    "ks_d_max": 0.00451,
+    "mad": 0.00106,
+    "digital_mixing_speed": 6545.303256393122,
+    "dmix_variance": 0.004768299736304538
+  },
+  {
+    "parameters": [
+      6,
+      8,
+      -3
+    ],
+    "initial_range": [
+      1,
+      100000
+    ],
+    "digit_frequencies": {
+      "1": 1556490,
+      "2": 918775,
+      "3": 653909,
+      "4": 508628,
+      "5": 416087,
+      "6": 354989,
+      "7": 308947,
+      "8": 260978,
+      "9": 237062
+    },
+    "total_samples": 5215865,
+    "computation_time": 5.459760427474976,
+    "chi_squared_statistic": 542.0056,
+    "p_value": 0.0,
+    "degrees_of_freedom": 8,
+    "ks_d_max": 0.00262,
     "mad": 0.0009,
-    "digital_mixing_speed": 7334.700749682178,
-    "dmix_variance": 0.0040512644273775385
+    "digital_mixing_speed": 7463.695935790277,
+    "dmix_variance": 0.004039859799319499
   },
   {
     "parameters": [
-      7,
-      16,
-      -4
+      6,
+      8,
+      -2
     ],
     "initial_range": [
       1,
       100000
     ],
     "digit_frequencies": {
-      "1": 1201340,
-      "2": 696479,
-      "3": 493339,
-      "4": 388645,
-      "5": 312383,
-      "6": 272706,
-      "7": 233418,
-      "8": 204001,
-      "9": 190012
+      "1": 1596304,
+      "2": 931918,
+      "3": 666422,
+      "4": 522470,
+      "5": 431300,
+      "6": 369339,
+      "7": 323146,
+      "8": 278488,
+      "9": 250393
     },
-    "total_samples": 3992323,
-    "computation_time": 5.747729778289795,
-    "chi_squared_statistic": 593.1877,
+    "total_samples": 5369780,
+    "computation_time": 5.75600528717041,
+    "chi_squared_statistic": 1429.4763,
     "p_value": 0.0,
     "degrees_of_freedom": 8,
-    "ks_d_max": 0.00362,
-    "mad": 0.00091,
-    "digital_mixing_speed": 7254.094143683889,
-    "dmix_variance": 0.0041105021807386274
+    "ks_d_max": 0.00713,
+    "mad": 0.00158,
+    "digital_mixing_speed": 4259.466134816418,
+    "dmix_variance": 0.007129845213968852
   },
   {
     "parameters": [
-      7,
-      17,
-      -6
+      6,
+      8,
+      -1
     ],
     "initial_range": [
       1,
       100000
     ],
     "digit_frequencies": {
-      "1": 1279936,
-      "2": 736317,
-      "3": 523530,
-      "4": 409919,
-      "5": 334178,
-      "6": 290024,
-      "7": 246781,
-      "8": 220898,
-      "9": 206484
+      "1": 1556534,
+      "2": 918757,
+      "3": 653881,
+      "4": 508619,
+      "5": 416121,
+      "6": 354975,
+      "7": 308938,
+      "8": 260939,
+      "9": 237094
     },
-    "total_samples": 4248067,
-    "computation_time": 4.502370834350586,
-    "chi_squared_statistic": 1230.2908,
+    "total_samples": 5215858,
+    "computation_time": 5.431685209274292,
+    "chi_squared_statistic": 541.8726,
     "p_value": 0.0,
     "degrees_of_freedom": 8,
-    "ks_d_max": 0.00512,
-    "mad": 0.0012,
-    "digital_mixing_speed": 5523.49279813965,
-    "dmix_variance": 0.005390465162906373
+    "ks_d_max": 0.00261,
+    "mad": 0.0009,
+    "digital_mixing_speed": 7463.6952881799125,
+    "dmix_variance": 0.004032237409859883
   },
   {
     "parameters": [
-      7,
-      17,
-      -5
+      6,
+      9,
+      -3
     ],
     "initial_range": [
       1,
       100000
     ],
     "digit_frequencies": {
-      "1": 1279901,
-      "2": 736550,
-      "3": 524042,
-      "4": 409798,
-      "5": 334317,
-      "6": 290257,
-      "7": 246894,
-      "8": 221315,
-      "9": 206500
+      "1": 3206372,
+      "2": 1853751,
+      "3": 1317126,
+      "4": 1024391,
+      "5": 844968,
+      "6": 715532,
+      "7": 626888,
+      "8": 557542,
+      "9": 493959
     },
-    "total_samples": 4249574,
-    "computation_time": 4.300976514816284,
-    "chi_squared_statistic": 1234.3734,
+    "total_samples": 10640529,
+    "computation_time": 14.51208209991455,
+    "chi_squared_statistic": 977.0982,
     "p_value": 0.0,
     "degrees_of_freedom": 8,
-    "ks_d_max": 0.00522,
-    "mad": 0.0012,
-    "digital_mixing_speed": 5523.62116352778,
-    "dmix_variance": 0.005378204710414433
+    "ks_d_max": 0.00336,
+    "mad": 0.00082,
+    "digital_mixing_speed": 8569.467341091375,
+    "dmix_variance": 0.003667505866960876
   },
   {
     "parameters": [
-      7,
-      17,
-      -4
+      6,
+      9,
+      -2
     ],
     "initial_range": [
       1,
       100000
     ],
     "digit_frequencies": {
-      "1": 1279657,
-      "2": 736209,
-      "3": 524957,
-      "4": 409059,
-      "5": 334592,
-      "6": 290530,
-      "7": 246636,
-      "8": 220910,
-      "9": 205934
+      "1": 1417081,
+      "2": 846468,
+      "3": 621482,
+      "4": 498814,
+      "5": 421971,
+      "6": 359351,
+      "7": 304415,
+      "8": 260589,
+      "9": 224086
     },
-    "total_samples": 4248484,
-    "computation_time": 4.250000476837158,
-    "chi_squared_statistic": 1156.3784,
+    "total_samples": 4954257,
+    "computation_time": 5.0822978019714355,
+    "chi_squared_statistic": 11018.555,
     "p_value": 0.0,
     "degrees_of_freedom": 8,
-    "ks_d_max": 0.00506,
-    "mad": 0.00116,
-    "digital_mixing_speed": 5713.9948163946165,
-    "dmix_variance": 0.005231281731650675
+    "ks_d_max": 0.02023,
+    "mad": 0.00461,
+    "digital_mixing_speed": 1452.2730003639751,
+    "dmix_variance": 0.020758043831058726
+  },
+  {
+    "parameters": [
+      6,
+      9,
+      -1
+    ],
+    "initial_range": [
+      1,
+      100000
+    ],
+    "digit_frequencies": {
+      "1": 1417029,
+      "2": 846487,
+      "3": 621500,
+      "4": 498802,
+      "5": 421989,
+      "6": 359289,
+      "7": 304437,
+      "8": 260638,
+      "9": 224086
+    },
+    "total_samples": 4954257,
+    "computation_time": 5.157443046569824,
+    "chi_squared_statistic": 11019.6115,
+    "p_value": 0.0,
+    "degrees_of_freedom": 8,
+    "ks_d_max": 0.02024,
+    "mad": 0.00461,
+    "digital_mixing_speed": 1452.2730003639751,
+    "dmix_variance": 0.02076470476931847
+  },
+  {
+    "parameters": [
+      7,
+      7,
+      -3
+    ],
+    "initial_range": [
+      1,
+      100000
+    ],
+    "digit_frequencies": {
+      "1": 1629202,
+      "2": 975010,
+      "3": 715369,
+      "4": 552121,
+      "5": 449602,
+      "6": 380504,
+      "7": 323122,
+      "8": 283434,
+      "9": 251621
+    },
+    "total_samples": 5559985,
+    "computation_time": 5.964140176773071,
+    "chi_squared_statistic": 2565.3885,
+    "p_value": 0.0,
+    "degrees_of_freedom": 8,
+    "ks_d_max": 0.00874,
+    "mad": 0.00209,
+    "digital_mixing_speed": 3227.3079521161253,
+    "dmix_variance": 0.009413377571540399
+  },
+  {
+    "parameters": [
+      7,
+      7,
+      -2
+    ],
+    "initial_range": [
+      1,
+      100000
+    ],
+    "digit_frequencies": {
+      "1": 1629231,
+      "2": 975001,
+      "3": 715319,
+      "4": 552153,
+      "5": 449610,
+      "6": 380492,
+      "7": 323111,
+      "8": 283445,
+      "9": 251611
+    },
+    "total_samples": 5559973,
+    "computation_time": 5.848822116851807,
+    "chi_squared_statistic": 2562.4353,
+    "p_value": 0.0,
+    "degrees_of_freedom": 8,
+    "ks_d_max": 0.00873,
+    "mad": 0.00209,
+    "digital_mixing_speed": 3227.3075036329865,
+    "dmix_variance": 0.009408381969100963
+  },
+  {
+    "parameters": [
+      7,
+      7,
+      -1
+    ],
+    "initial_range": [
+      1,
+      100000
+    ],
+    "digit_frequencies": {
+      "1": 1629227,
+      "2": 975026,
+      "3": 715317,
+      "4": 552106,
+      "5": 449657,
+      "6": 380476,
+      "7": 323091,
+      "8": 283495,
+      "9": 251578
+    },
+    "total_samples": 5559973,
+    "computation_time": 6.004701137542725,
+    "chi_squared_statistic": 2561.6124,
+    "p_value": 0.0,
+    "degrees_of_freedom": 8,
+    "ks_d_max": 0.00873,
+    "mad": 0.00209,
+    "digital_mixing_speed": 3227.3075036329865,
+    "dmix_variance": 0.009401547403537464
+  },
+  {
+    "parameters": [
+      7,
+      8,
+      -3
+    ],
+    "initial_range": [
+      1,
+      100000
+    ],
+    "digit_frequencies": {
+      "1": 2179595,
+      "2": 1320818,
+      "3": 955283,
+      "4": 743533,
+      "5": 605506,
+      "6": 508241,
+      "7": 438220,
+      "8": 377532,
+      "9": 336298
+    },
+    "total_samples": 7465026,
+    "computation_time": 9.048429727554321,
+    "chi_squared_statistic": 3861.5518,
+    "p_value": 0.0,
+    "degrees_of_freedom": 8,
+    "ks_d_max": 0.00906,
+    "mad": 0.0023,
+    "digital_mixing_speed": 2988.2744889875976,
+    "dmix_variance": 0.010342564269298783
+  },
+  {
+    "parameters": [
+      7,
+      8,
+      -2
+    ],
+    "initial_range": [
+      1,
+      100000
+    ],
+    "digit_frequencies": {
+      "1": 2182882,
+      "2": 1320875,
+      "3": 955900,
+      "4": 741905,
+      "5": 603528,
+      "6": 507169,
+      "7": 438713,
+      "8": 377183,
+      "9": 338218
+    },
+    "total_samples": 7466373,
+    "computation_time": 8.90031886100769,
+    "chi_squared_statistic": 3460.1407,
+    "p_value": 0.0,
+    "degrees_of_freedom": 8,
+    "ks_d_max": 0.00867,
+    "mad": 0.00217,
+    "digital_mixing_speed": 3167.331650839407,
+    "dmix_variance": 0.00976183970030263
+  },
+  {
+    "parameters": [
+      7,
+      8,
+      -1
+    ],
+    "initial_range": [
+      1,
+      100000
+    ],
+    "digit_frequencies": {
+      "1": 2182290,
+      "2": 1319231,
+      "3": 953743,
+      "4": 744598,
+      "5": 604325,
+      "6": 509473,
+      "7": 439506,
+      "8": 377181,
+      "9": 336658
+    },
+    "total_samples": 7467005,
+    "computation_time": 8.810136556625366,
+    "chi_squared_statistic": 3698.9464,
+    "p_value": 0.0,
+    "degrees_of_freedom": 8,
+    "ks_d_max": 0.00877,
+    "mad": 0.00224,
+    "digital_mixing_speed": 3068.368947382756,
+    "dmix_variance": 0.010083163792464104
+  },
+  {
+    "parameters": [
+      7,
+      9,
+      -3
+    ],
+    "initial_range": [
+      1,
+      100000
+    ],
+    "digit_frequencies": {
+      "1": 1436617,
+      "2": 848515,
+      "3": 621971,
+      "4": 498605,
+      "5": 421229,
+      "6": 361771,
+      "7": 311124,
+      "8": 269847,
+      "9": 231928
+    },
+    "total_samples": 5001607,
+    "computation_time": 5.216177940368652,
+    "chi_squared_statistic": 10861.7875,
+    "p_value": 0.0,
+    "degrees_of_freedom": 8,
+    "ks_d_max": 0.02083,
+    "mad": 0.00463,
+    "digital_mixing_speed": 1446.891914504631,
+    "dmix_variance": 0.020826199868537412
+  },
+  {
+    "parameters": [
+      7,
+      9,
+      -2
+    ],
+    "initial_range": [
+      1,
+      100000
+    ],
+    "digit_frequencies": {
+      "1": 1436555,
+      "2": 848153,
+      "3": 621773,
+      "4": 498738,
+      "5": 421200,
+      "6": 361699,
+      "7": 311543,
+      "8": 269642,
+      "9": 231929
+    },
+    "total_samples": 5001232,
+    "computation_time": 5.2312750816345215,
+    "chi_squared_statistic": 10928.4642,
+    "p_value": 0.0,
+    "degrees_of_freedom": 8,
+    "ks_d_max": 0.02091,
+    "mad": 0.00465,
+    "digital_mixing_speed": 1440.661720712876,
+    "dmix_variance": 0.02090698742812329
+  },
+  {
+    "parameters": [
+      7,
+      9,
+      -1
+    ],
+    "initial_range": [
+      1,
+      100000
+    ],
+    "digit_frequencies": {
+      "1": 1436128,
+      "2": 848280,
+      "3": 622189,
+      "4": 498390,
+      "5": 421644,
+      "6": 361355,
+      "7": 311693,
+      "8": 269964,
+      "9": 231946
+    },
+    "total_samples": 5001589,
+    "computation_time": 5.159503698348999,
+    "chi_squared_statistic": 10993.8503,
+    "p_value": 0.0,
+    "degrees_of_freedom": 8,
+    "ks_d_max": 0.02093,
+    "mad": 0.00465,
+    "digital_mixing_speed": 1440.6683873539416,
+    "dmix_variance": 0.020925275940512512
   }
 ]
