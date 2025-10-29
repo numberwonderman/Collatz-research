@@ -95,7 +95,7 @@ Scan complete! Scanned: 27, Skipped: 0
 Results saved to swiss_cheese_results.json
 
 ================================================================================
-               TOP 5: BEST BENFORD'S LAW CONFORMITY (Lowest MAD)                
+ TOP 5: BEST BENFORD'S LAW CONFORMITY (Lowest MAD)                
 ================================================================================
 Rank  (a, b, c)           MAD         Dmix        Mix Speed      Samples   
 --------------------------------------------------------------------------------
