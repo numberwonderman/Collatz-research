@@ -1,0 +1,33 @@
+Added 10 trivial states as holes
+
+=== SWISS CHEESE CUBE SCAN ===
+Cube center: (4, 5, 1)
+Cube side length: 5
+Total parameter points: 125
+Holes (trivial states): 10
+Points to scan: 115
+Initial range: N=1 to 100000
+==================================================
+
+[1/115] Analyzing (a=2, b=3, c=-1)...
+  ✓ Samples: 2,841,189 | Chi-Sq Stat: 43949.5699 | Chi-Sq p-value: 0.0 | MAD: 0.01052 | KS D-Max: 0.03790 | Dmix: 0.047360 | Digital Mix Speed: 613.451 | Time: 2.94s
+
+[2/115] Analyzing (a=2, b=3, c=0)...
+  ✓ Samples: 9,833,855 | Chi-Sq Stat: 662.9408 | Chi-Sq p-value: 0.0 | MAD: 0.00079 | KS D-Max: 0.00156 | Dmix: 0.003549 | Digital Mix Speed: 8851.549 | Time: 12.62s
+
+[3/115] Analyzing (a=2, b=3, c=1)...
+  ✓ Samples: 10,753,840 | Chi-Sq Stat: 65960.9361 | Chi-Sq p-value: 0.0 | MAD: 0.00597 | KS D-Max: 0.01712 | Dmix: 0.026853 | Digital Mix Speed: 1177.816 | Time: 13.48s
+
+[4/115] Analyzing (a=2, b=3, c=2)...
+  ✓ Samples: 9,833,826 | Chi-Sq Stat: 652.0867 | Chi-Sq p-value: 0.0 | MAD: 0.00078 | KS D-Max: 0.00154 | Dmix: 0.003516 | Digital Mix Speed: 8965.029 | Time: 12.55s
+
+[5/115] Analyzing (a=2, b=3, c=3)...
+  ✓ Samples: 3,402,885 | Chi-Sq Stat: 85410.7794 | Chi-Sq p-value: 0.0 | MAD: 0.01297 | KS D-Max: 0.03348 | Dmix: 0.058354 | Digital Mix Speed: 503.612 | Time: 3.48s
+
+[6/115] Analyzing (a=2, b=4, c=-1)...
+  ✓ Samples: 7,843,077 | Chi-Sq Stat: 587.6254 | Chi-Sq p-value: 0.0 | MAD: 0.00072 | KS D-Max: 0.00107 | Dmix: 0.003253 | Digital Mix Speed: 9575.676 | Time: 9.40s
+
+[7/115] Analyzing (a=2, b=4, c=1)...
+  ✓ Samples: 7,843,051 | Chi-Sq Stat: 600.2710 | Chi-Sq p-value: 0.0 | MAD: 0.00072 | KS D-Max: 0.00108 | Dmix: 0.003232 | Digital Mix Speed: 9575.674 | Time: 9.16s
+
+[8/115] Analyzing (a=2, b=4, c=2)...
