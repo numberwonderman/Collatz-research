@@ -279,8 +279,8 @@ def print_summary_table(results: List[Dict], title: str):
 if __name__ == "__main__":
     # Create a scanner centered at (12, 16, -4) - your test config
     scanner = SwissCheeseParameterScanner(
-        cube_center=(25, 17, 15), 
-        cube_side_length=9
+        cube_center=(7, 14, 8), 
+        cube_side_length=11
           # Scans from (10, 14, -6) to (14, 18, -2)
     )
     

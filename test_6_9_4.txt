@@ -1,0 +1,31 @@
+Added 0 trivial states as holes
+
+=== SWISS CHEESE CUBE SCAN ===
+Cube center: (6, 9, 4)
+Cube side length: 1
+Total parameter points: 1
+Holes (trivial states): 0
+Points to scan: 1
+Initial range: N=1 to 100000
+==================================================
+
+[1/1] Analyzing (a=6, b=9, c=4)...
+  ✓ Samples: 4,954,246 | Chi-Sq Stat: 11006.6190 | Chi-Sq p-value: 0.0 | MAD: 0.00461 | KS D-Max: 0.02022 | Dmix: 0.020745 | Digital Mix Speed: 1452.273 | Time: 5.27s
+
+==================================================
+Scan complete! Scanned: 1, Skipped: 0
+Results saved to swiss_cheese_results.json
+
+================================================================================
+               TOP 5: BEST BENFORD'S LAW CONFORMITY (Lowest MAD)                
+================================================================================
+Rank  (a, b, c)           MAD         Dmix        Mix Speed      Samples   
+--------------------------------------------------------------------------------
+1     (6, 9, 4)           0.004610    0.020745    1452.27        4,954,246 
+
+================================================================================
+                      TOP 5: FASTEST DIGITAL MIXING SPEED                       
+================================================================================
+Rank  (a, b, c)           MAD         Dmix        Mix Speed      Samples   
+--------------------------------------------------------------------------------
+1     (6, 9, 4)           0.004610    0.020745    1452.27        4,954,246 
