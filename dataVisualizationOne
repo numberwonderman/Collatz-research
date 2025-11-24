@@ -1,0 +1,122 @@
+import json
+import math
+import sys
+
+# ----------------------------------------------------------------
+# 1. YOUR EXISTING GENERALIZED COLLATZ FUNCTION (Placeholder)
+#    You MUST replace this placeholder with the actual, production-ready 
+#    generalized Collatz logic from your companion GitHub repository.
+# ----------------------------------------------------------------
+def generalized_collatz(n, X, Y, Z):
+    """
+    Generates the generalized Collatz sequence C_X,Y,Z(n).
+    Returns the full sequence and the maximum value reached.
+    """
+    sequence = [n]
+    max_val = n
+    current = n
+    MAX_STEPS = 1000
+    
+    for _ in range(MAX_STEPS):
+        if current == 1:
+            break
+        
+        # Rule: n/X if n=0 mod X, or Yn+Z otherwise
+        if current % X == 0:
+            current = current // X
+        else:
+            current = current * Y + Z
+        
+        sequence.append(current)
+        max_val = max(max_val, current)
+        
+        # Safety break for divergence (10^18 threshold)
+        if current > 10**18:
+            break
+            
+    return {"sequence": sequence, "max_value": max_val}
+
+
+# ----------------------------------------------------------------
+# 2. THE CRITICAL NEW FUNCTION: Mean Absolute Deviation (MAD)
+#    This now correctly implements the MAD metric from your paper.
+# ----------------------------------------------------------------
+def get_benford_deviation(sequence):
+    """
+    Calculates the Benford Mean Absolute Deviation (MAD) of the sequence's 
+    leading digits from the expected Benford Law distribution. 
+    This is the core statistical metric used in your paper.
+    """
+    if len(sequence) < 5: 
+        return 0
+    
+    counts = [0] * 10
+    
+    for num in sequence:
+        if num > 0:
+            try:
+                # Use string conversion to reliably get the first digit of large numbers
+                digit = int(str(num)[0])
+                if 1 <= digit <= 9:
+                    counts[digit] += 1
+            except ValueError:
+                continue 
+            
+    deviation_sum = 0
+    total_digits = sum(counts)
+    if total_digits == 0: 
+        return 0
+    
+    # Benford Law Expected Frequencies for digits 1-9
+    # Note: BENFORD[0] is unused, so indices 1-9 map to digits 1-9
+    BENFORD = [0, 0.301, 0.176, 0.125, 0.097, 0.079, 0.067, 0.058, 0.051, 0.046]
+    
+    for d in range(1, 10):
+        observed = counts[d] / total_digits
+        expected = BENFORD[d]
+        # Sum of ABSOLUTE Errors (for MAD)
+        deviation_sum += abs(observed - expected)
+        
+    # The final step for MAD: Divide the sum by the number of categories (9 digits)
+    # The result is the Mean Absolute Deviation (MAD)
+    mad_score = deviation_sum / 9
+    return mad_score
+
+
+# ----------------------------------------------------------------
+# 3. THE EXPORT LOOP (Generates the 3D Plot Data)
+# ----------------------------------------------------------------
+def generate_benford_clusters(max_seed, X, Y, Z):
+    results = []
+    
+    # Using your elite parameter set (21, 14, 12)
+    print(f"Scanning Box Universe for elite set ({X}, {Y}, {Z}) up to seed {max_seed}.")
+    
+    for n in range(1, max_seed + 1):
+        
+        result = generalized_collatz(n, X, Y, Z)
+
+        # Calculate the 3D coordinates
+        # IMPORTANT: This now uses the correct MAD score for the Z-Axis/Color
+        mad_score = get_benford_deviation(result["sequence"])
+        # Log scale of the maximum value for the Y-axis is crucial for visualization
+        log_max_val = math.log10(result["max_value"] if result["max_value"] > 0 else 1)
+        
+        results.append({
+            "seed": n,          # X-Axis (Starting Seed)
+            "max_val": log_max_val, # Y-Axis (Log Height)
+            "dev_score": mad_score, # Z-Axis/Color (Benford Deviation, MAD)
+        })
+
+        if n % 10000 == 0:
+            print(f"Processed {n} seeds. Current MAD: {mad_score:.6f}")
+
+    # Write the data to a JSON file for your Three.js Toolkit
+    filename = 'benford_clusters.json'
+    with open(filename, 'w') as f:
+        json.dump(results, f, indent=4)
+        
+    print(f"\nData ready! Exported {len(results)} cluster points to {filename}.")
+
+# **ACTION:** Run the simulation using your elite parameter set (21, 14, 12)
+generate_benford_clusters(50000, 21, 14, 12)
