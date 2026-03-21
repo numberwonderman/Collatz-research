@@ -1,0 +1,27 @@
+{
+    "metadata": {
+        "project": "Intergalactic Hypothesis / Swiss Cheese Cube",
+        "researcher": "Franklin Loeb",
+        "timestamp": "2026-03-21_15-48-53",
+        "parameters": {
+            "a": 21,
+            "b": 14,
+            "c": 12
+        }
+    },
+    "results": {
+        "n_count": 8320416,
+        "mean_absolute_deviation": 0.00013090600705527775,
+        "digit_frequencies": {
+            "1": 120787810,
+            "2": 70692533,
+            "3": 50129591,
+            "4": 38906393,
+            "5": 31898652,
+            "6": 26910785,
+            "7": 23382091,
+            "8": 20493422,
+            "9": 18302829
+        }
+    }
+}
