@@ -1,6 +1,13 @@
 # Collatz-research
 software to support my Collatz research
 
+## Research notes
+
+[RESEARCH_NOTES.md](RESEARCH_NOTES.md) documents empirical findings from scanning the
+generalized-Collatz `(a, b, c)` parameter cube: which strong-Benford-conformity regions
+are explained by classical geometric-sequence arguments (and why), and where the actual
+convergence-to-1 behavior lives in that space (`convergence_scan.py`).
+
 ## Bridge to collatz-box-universes
 
 This repo and [collatz-box-universes](https://github.com/numberwonderman/Collatz-box-universes)
